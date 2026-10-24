@@ -1,0 +1,4 @@
+* text=auto eol=lf
+assets/objects/* binary
+src/** -text -whitespace
+LICENSE-EA-GPLv3.md -text -whitespace

@@ -1,0 +1,14 @@
+# [TD] CrystAlien Conflict Reinforcements
+
+EA has not endorsed and does not support this product.
+
+Adds LEGO Mars Mission: CrystAlien Conflict units and buildings alongside the existing GDI and Nod roster.
+
+For manual installation, copy this folder to Documents/CnCRemastered/Mods/Tiberian_Dawn/CrystAlienConflictPlus.
+Enable it in the Tiberian Dawn Mods menu and restart. Enable only one of
+Factions and Reinforcements at a time. Both provide their own game DLL.
+Use single-player Skirmish or custom missions; online multiplayer is unsupported.
+
+DLL source and build instructions: Source/CrystAlienConflict-DLL-source.zip.
+See LICENSE-EA-GPLv3.md for the DLL license. Original LEGO / 4T2 artwork,
+music and sound remain the property of their respective owners.

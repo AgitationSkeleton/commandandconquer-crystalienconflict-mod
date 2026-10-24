@@ -1,0 +1,9 @@
+{
+  "name": "CrystAlien Conflict Factions",
+  "description": "LEGO Mars Mission: CrystAlien Conflict, ported to Tiberian Dawn",
+  "author": "AgitationSkeleton",
+  "load_order": 1,
+  "version_low": 10,
+  "version_high": 1,
+  "game_type": "TD"
+}

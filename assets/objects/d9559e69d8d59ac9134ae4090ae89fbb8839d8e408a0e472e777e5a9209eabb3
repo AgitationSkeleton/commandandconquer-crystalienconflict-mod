@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectTypeList>
+
+	<ObjectTypeClass Name="TD_UAGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UAGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UAGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UAGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UBGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UBGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UBGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UBGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UCGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UCGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UCGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UCGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCGOOD</entry>
+				<entry>TD_BGGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UDGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UDGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UDGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UDGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BAGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UEGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UEGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UEGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UEGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UFGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UFGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UFGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UFGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEGOOD</entry>
+				<entry>TD_BFGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UGGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UGGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UGGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UGGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BFGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UHGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UHGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UHGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UHGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BFGOOD</entry>
+				<entry>TD_BEGOOD</entry>
+				<entry>TD_BGGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UJGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UJGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UJGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UJGOOD</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UPGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UPGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UPGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UPGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BKGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_URGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_URGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_URGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_URGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEGOOD</entry>
+				<entry>TD_BLGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UAEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UAEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UAEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UAEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UBEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UBEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UBEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UBEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UCEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UCEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UCEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UCEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCEVIL</entry>
+				<entry>TD_BGEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UDEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UDEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UDEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UDEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BAEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UEEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UEEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UEEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UEEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UFEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UFEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UFEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UFEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEEVIL</entry>
+				<entry>TD_BFEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UGEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UGEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UGEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UGEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BFEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UHEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UHEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UHEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UHEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BFEVIL</entry>
+				<entry>TD_BEEVIL</entry>
+				<entry>TD_BGEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UJEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UJEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UJEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UJEVIL</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UMEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UMEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UMEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UMEVIL</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UNEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UNEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UNEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UNEVIL</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UPEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UPEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UPEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UPEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BKEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UQEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UQEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UQEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UQEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UREVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UREVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UREVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UREVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEEVIL</entry>
+				<entry>TD_BLEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UMGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UMGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UMGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UMGOOD</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UNGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UNGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UNGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UNGOOD</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UQGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UQGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UQGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UQGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UKGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UKGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UKGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UKGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BHGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_UKEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_UKEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_UKEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_UKEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BHEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BSGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_BSGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_BSGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BSGOOD</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BSEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_UNIT_BSEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_UNIT_DESC_BSEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BSEVIL</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BAGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BAGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BAGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BAGOOD</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BBGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BBGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BBGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BBGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BAGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BCGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BCGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BCGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BCGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BBGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BDGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BDGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BDGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BDGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BEGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BEGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BEGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BEGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BFGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BFGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BFGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BFGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BGGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BGGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BGGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BGGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEGOOD</entry>
+				<entry>TD_BFGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BHGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BHGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BHGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BHGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BGGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BIGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BIGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BIGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BIGOOD</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BKGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BKGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BKGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BKGOOD</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BLGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BLGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BLGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BLGOOD</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BKGOOD</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BXGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BXGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BXGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BXGOOD</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BAEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BAEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BAEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BAEVIL</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BBEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BBEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BBEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BBEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BAEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BCEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BCEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BCEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BCEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BBEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BDEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BDEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BDEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BDEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BEEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BEEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BEEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BEEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BFEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BFEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BFEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BFEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BCEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BGEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BGEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BGEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BGEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BEEVIL</entry>
+				<entry>TD_BFEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BHEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BHEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BHEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BHEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BGEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BJEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BJEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BJEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BJEVIL</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BKEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BKEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BKEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BKEVIL</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BIEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BIEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BIEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BIEVIL</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BLEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BLEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BLEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BLEVIL</BuildIcon>
+			<RequiredTypes>
+				<entry>TD_BKEVIL</entry>
+			</RequiredTypes>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BXEVIL" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BXEVIL</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BXEVIL</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BXEVIL</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+	<ObjectTypeClass Name="TD_BJGOOD" Classification="CNCBuildableObject" CanInstantiate="False">
+		<CNCEncyclopediaComponent>
+			<ObjectNameTextID>TEXT_STRUCTURE_BJGOOD</ObjectNameTextID>
+			<ObjectDescriptionTextID>TEXT_STRUCTURE_DESC_BJGOOD</ObjectDescriptionTextID>
+			<BuildIcon>BuildIcon_TD_BJGOOD</BuildIcon>
+		</CNCEncyclopediaComponent>
+	</ObjectTypeClass>
+
+</ObjectTypeList>

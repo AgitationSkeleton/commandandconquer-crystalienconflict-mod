@@ -1,0 +1,10 @@
+dist/
+.build/
+__pycache__/
+*.pyc
+.vs/
+*.user
+src/TiberianDawn/Win32/
+src/TiberianDawn/Release/
+src/TiberianDawn/Debug/
+src/bin/

@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+
+<MousePointers>
+
+	<!-- Make sure to also update RTS\RTSMouseType.h when adding or removing entries -->
+
+	<MousePointerDataClass Name="POINTER_NORMAL">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_NORMAL_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_HYPERLINK">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_HOURGLASS">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_WAIT">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>	 
+		<HotX> 0 </HotX>												
+		<HotY> 0 </HotY>												
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_DRAGGING">
+		<BaseTextureName> icon_dragpointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>	
+
+	<MousePointerDataClass Name="POINTER_NO">
+		<BaseTextureName> icon_cantpointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>	
+
+	<MousePointerDataClass Name="POINTER_SELECT">
+		<BaseTextureName> icon_select_friendly.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0580 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_SELECT_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_MOVE">
+		<BaseTextureName> icon_movement_command.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0870 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_MOVE_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_MOVE_ALTER">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_MOVE_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_MOVE_TO_LANDING_PAD">
+		<BaseTextureName> icon_mount_unit.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0725 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_MOVE_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_CURSOR_AUTO_DRIVE_MOVE">
+		<BaseTextureName> icon_IonCannon_cursor.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.2609 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_MOVE_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_TELEPORT">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_CANT_SELECT">
+		<BaseTextureName> icon_unavailable.TGA </BaseTextureName>		
+		<HotX> 24 </HotX>													
+		<HotY> 24 </HotY>													
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>						
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_CANT_MOVE">
+		<BaseTextureName> icon_movement_unavailable.TGA </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_CANT_MOVE_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_CANT_ATTACK">
+		<BaseTextureName> icon_unavailable.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_CANT_ATTACK_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_ATTACK">
+		<BaseTextureName> icon_target_enemy.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_ATTACK_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_ATTACK_POSITION">
+		<BaseTextureName> icon_movement_force.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_ATTACK_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_ATTACK_MOVE">
+		<BaseTextureName> icon_target_enemy.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_ATTACK_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_WAYPOINT_PLACEMENT">
+		<BaseTextureName> icon_select_friendly.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.0580 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_ATTACK_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_ATTACK_OUT_OF_RANGE">
+		<BaseTextureName> icon_target_enemy_out_of_range.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_ATTACK_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_ATTACK_POSITION_OUT_OF_RANGE">
+		<BaseTextureName> icon_target_enemy_out_of_range.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_ATTACK_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_DRAG_SELECT_MODE">
+		<BaseTextureName> icon_select_friendly.TGA </BaseTextureName>	 	
+		<HotX> 0 </HotX>														
+		<HotY> 0 </HotY>														
+		<AnimDelaySeconds> 0.0580 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_ACCELERATED_SCROLL_THRESHOLD">
+		<BaseTextureName> icon_cantpointer.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+  <!-- EDGE SCROLLING UNAVAILABLE -->
+  <MousePointerDataClass Name="POINTER_SCROLL_LEFT_EDGE">
+    <BaseTextureName> icon_EdgeScrollML.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_SCROLL_RIGHT_EDGE">
+    <BaseTextureName> icon_EdgeScrollMR.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_SCROLL_TOP_EDGE">
+    <BaseTextureName> icon_EdgeScrollTM.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_SCROLL_BOTTOM_EDGE">
+    <BaseTextureName> icon_EdgeScrollBM.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_SCROLL_LEFT_TOP_CORNER">
+    <BaseTextureName> icon_EdgeScrollTL.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_SCROLL_LEFT_BOTTOM_CORNER">
+    <BaseTextureName> icon_EdgeScrollBL.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_SCROLL_RIGHT_TOP_CORNER">
+    <BaseTextureName> icon_EdgeScrollTR.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_SCROLL_RIGHT_BOTTOM_CORNER">
+    <BaseTextureName> icon_EdgeScrollBR.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+  
+  <!-- EDGE SCROLLING UNAVAILABLE -->
+  <MousePointerDataClass Name="POINTER_CANT_SCROLL_LEFT_EDGE">
+    <BaseTextureName> icon_EdgeScroll_Unavailable_ML.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_CANT_SCROLL_RIGHT_EDGE">
+    <BaseTextureName> icon_EdgeScroll_Unavailable_MR.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_CANT_SCROLL_TOP_EDGE">
+    <BaseTextureName> icon_EdgeScroll_Unavailable_TM.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_CANT_SCROLL_BOTTOM_EDGE">
+    <BaseTextureName> icon_EdgeScroll_Unavailable_BM.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_CANT_SCROLL_LEFT_TOP_CORNER">
+    <BaseTextureName> icon_EdgeScroll_Unavailable_TL.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_CANT_SCROLL_LEFT_BOTTOM_CORNER">
+    <BaseTextureName> icon_EdgeScroll_Unavailable_TB.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_CANT_SCROLL_RIGHT_TOP_CORNER">
+    <BaseTextureName> icon_EdgeScroll_Unavailable_TR.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_CANT_SCROLL_RIGHT_BOTTOM_CORNER">
+    <BaseTextureName> icon_EdgeScroll_Unavailable_BR.tga </BaseTextureName>
+    <HotX> 0 </HotX>
+    <HotY> 0 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <!-- Mouse pointer for when you don't want a mouse pointer -->
+	<MousePointerDataClass Name="POINTER_INVISIBLE">
+		<BaseTextureName> invisible_pointer.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+
+	<!-- Beacon placement mode !!!-->
+	<MousePointerDataClass Name="POINTER_PLACE_BEACON">
+		<BaseTextureName> icon_movement_radar.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<ControllerTargeting> No </ControllerTargeting>
+		<AnimDelaySeconds> 0.0870 </AnimDelaySeconds>
+	</MousePointerDataClass>
+
+	<!-- AZ Modified-->
+	<!-- Mouse pointer for when the player is attempting to sell a structure !!!-->
+	<MousePointerDataClass Name="POINTER_PLAYER_SELL_OBJECT">
+		<BaseTextureName> icon_sell_structure.TGA </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0290 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+  <!-- Mouse pointer for when the player is attempting to sell a structure !!!-->
+  <MousePointerDataClass Name="POINTER_PLAYER_CANT_SELL_OBJECT">
+    <BaseTextureName> icon_sell_structure_invalid.TGA </BaseTextureName>
+    <HotX> 24 </HotX>
+    <HotY> 24 </HotY>
+    <AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_PLAYER_SELL_UNIT">
+		<BaseTextureName> icon_sell_unit.TGA </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0290 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+  <!-- Mouse pointer for when the player is attempting to sell a structure !!!-->
+  <MousePointerDataClass Name="POINTER_PLAYER_SUPERWEAPON">
+    <BaseTextureName> icon_target_super.TGA </BaseTextureName>
+    <!--BaseTextureName> icon_sell_structure.TGA </BaseTextureName-->
+    <HotX> 24 </HotX>
+    <HotY> 24 </HotY>
+    <AnimDelaySeconds> 0.0326 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_PLAYER_SUPERWEAPON_SELECT">
+		<BaseTextureName> icon_select_green.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_PLAYER_SUPERWEAPON_AIRSTRIKE">
+		<BaseTextureName> icon_target_super.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0326 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_PLAYER_SUPERWEAPON_IONCANNON">
+		<BaseTextureName> icon_IonCannon.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0163 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+  <!-- Mouse pointer for when the player is attempting to sell a structure !!!-->
+  <MousePointerDataClass Name="POINTER_PLAYER_SUPERWEAPON_NUKE">
+    <BaseTextureName> icon_target_nuke.TGA </BaseTextureName>
+    <!--BaseTextureName> icon_sell_structure.TGA </BaseTextureName-->
+    <HotX> 24 </HotX>
+    <HotY> 24 </HotY>
+    <AnimDelaySeconds> 0.0373 </AnimDelaySeconds>
+    <ControllerTargeting> No </ControllerTargeting>
+  </MousePointerDataClass>
+
+	<!-- AZ Modified-->
+	<MousePointerDataClass Name="POINTER_PLAYER_PAUSE_OBJECT">
+		<BaseTextureName> icon_placement_radar.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- AZ Modified-->
+	<MousePointerDataClass Name="POINTER_PLAYER_REPAIR_OBJECT">
+		<BaseTextureName> icon_repair.TGA </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0145 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_GUARD">
+		<BaseTextureName> icon_movement_Escort.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0696 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_PLAYER_ATTACH_TO_STRUCTURE">
+		<BaseTextureName> icon_mount_unit.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0725 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_BOARD_TRANSPORT">
+		<BaseTextureName> icon_mount_unit.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0725 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_UNLOAD_TRANSPORT_AT_POINT">
+		<BaseTextureName> icon_deploy.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0242 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_RALLY">
+		<BaseTextureName> icon_movement_force.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_SET_DEFAULT_FACTORY">
+		<BaseTextureName> icon_primary.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0386 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_FIRE_EXTINGUISH">
+		<BaseTextureName> icon_fire_extinguish.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_MERGE_WITH_OBJECT">
+		<BaseTextureName> icon_mount_unit.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0725 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Targeting with special ability, and over valid target enemy object -->
+	<MousePointerDataClass Name="POINTER_TARGET_SPECIAL_ABILITY_TO_ENEMY_OBJECT">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_TARGET_SPECIAL_ABILITY_TO_ENEMY_OBJECT_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<!-- Targeting with special ability, and over valid target enemy object, but out of range -->
+	<MousePointerDataClass Name="POINTER_TARGET_SPECIAL_ABILITY_TO_ENEMY_OBJECT_OUT_OF_RANGE">
+		<BaseTextureName> icon_target_enemy_out_of_range.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_TARGET_SPECIAL_ABILITY_TO_ENEMY_OBJECT_OUT_OF_RANGE_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<!-- Targeting with special ability, and NOT over valid target enemy object -->
+	<MousePointerDataClass Name="POINTER_TARGET_SPECIAL_ABILITY_TO_ENEMY_OBJECT_INVALID">
+		<BaseTextureName> icon_unavailable.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_TARGET_SPECIAL_ABILITY_TO_ENEMY_OBJECT_INVALID_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<!-- Targeting with special ability, and over valid target friendly object -->
+	<MousePointerDataClass Name="POINTER_TARGET_SPECIAL_ABILITY_TO_FRIENDLY_OBJECT">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_TARGET_SPECIAL_ABILITY_TO_FRIENDLY_OBJECT_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<!-- Targeting with special ability, and over valid target friendly object, but out of range -->
+	<MousePointerDataClass Name="POINTER_TARGET_SPECIAL_ABILITY_TO_FRIENDLY_OBJECT_OUT_OF_RANGE">
+		<BaseTextureName>  icon_target_enemy_out_of_range.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_TARGET_SPECIAL_ABILITY_TO_FRIENDLY_OBJECT_OUT_OF_RANGE_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<!-- Targeting with special ability, and NOT over valid target friendly object -->
+	<MousePointerDataClass Name="POINTER_TARGET_SPECIAL_ABILITY_TO_FRIENDLY_OBJECT_INVALID">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_TARGET_SPECIAL_ABILITY_TO_FRIENDLY_OBJECT_INVALID_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<!-- Attack Ground-->
+	<!-- Targeting with special ability, and over valid target passable location -->
+	<MousePointerDataClass Name="POINTER_TARGET_SPECIAL_ABILITY_TO_POSITION">
+		<BaseTextureName> icon_target_enemy.TGA </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_TARGET_SPECIAL_ABILITY_TO_POSITION_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+	<!-- Targeting with special ability, and over valid target passable location, but out of range -->
+	<MousePointerDataClass Name="POINTER_TARGET_SPECIAL_ABILITY_TO_POSITION_OUT_OF_RANGE">
+		<BaseTextureName>  icon_target_enemy_out_of_range.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.0435 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+		<ControllerTargetingAliasName> POINTER_TARGET_SPECIAL_ABILITY_TO_POSITION_OUT_OF_RANGE_CONTROLLER_ALIAS </ControllerTargetingAliasName>
+	</MousePointerDataClass>
+
+
+	<!-- Mouse pointer for talking to someone -->
+	<MousePointerDataClass Name="POINTER_CHAT">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for when you can open a treasure chest -->
+	<MousePointerDataClass Name="POINTER_OPEN_TREASURE">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for when you your treasure chest is inactive -->
+	<MousePointerDataClass Name="POINTER_OPEN_TREASURE_INACTIVE">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for when you can open the player menu on someone -->
+	<MousePointerDataClass Name="POINTER_VENDOR_SELL_ITEM">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Indicates that a reduced amount of damage is expected -->
+	<MousePointerDataClass Name="POINTER_REDUCED_DAMAGE">
+		<BaseTextureName> icon_pointer.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Indicates that an increased amount of damage is expected -->
+	<MousePointerDataClass Name="POINTER_INCREASED_DAMAGE">
+		<BaseTextureName> icon_pointer.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<ControllerTargeting> No </ControllerTargeting>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for selecting a PVP leaderboard -->
+	<MousePointerDataClass Name="POINTER_LEADERBOARD">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for selecting a PVP leaderboard, but out of range -->
+	<MousePointerDataClass Name="POINTER_LEADERBOARD_INACTIVE">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for selecting a PVP leaderboard -->
+	<MousePointerDataClass Name="POINTER_NPC_DIALOG">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for selecting a PVP leaderboard, but out of range -->
+	<MousePointerDataClass Name="POINTER_NPC_DIALOG_INACTIVE">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for when you can loot an object -->
+	<MousePointerDataClass Name="POINTER_LOOT">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for when your loot is inactive -->
+	<MousePointerDataClass Name="POINTER_LOOT_INACTIVE">
+		<BaseTextureName> icon_pointer.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for selecting a Vendor -->
+	<MousePointerDataClass Name="POINTER_VENDOR">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<!-- Mouse pointer for when vendor is inactive -->
+	<MousePointerDataClass Name="POINTER_VENDOR_INACTIVE">
+		<BaseTextureName> icon_pointer.TGA </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> No </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_STRUCTURE_DEPLOY">
+		<BaseTextureName> icon_deploy.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0242 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_STRUCTURE_DEPLOY_INVALID">
+		<BaseTextureName> icon_DeployUnavailable.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_REPAIR">
+		<BaseTextureName> icon_repair.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0145 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_REPAIR_ENGINEER">
+		<BaseTextureName> icon_repair_engineer.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0145 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_REPAIR_INVALID">
+		<BaseTextureName> icon_repair_invalid.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_PLACE_C4">
+    <BaseTextureName> icon_c4_placement.tga </BaseTextureName>
+    <HotX> 24 </HotX>
+    <HotY> 24 </HotY>
+    <AnimDelaySeconds> 0.0725 </AnimDelaySeconds>
+    <ControllerTargeting> Yes </ControllerTargeting>
+  </MousePointerDataClass>
+
+  <MousePointerDataClass Name="POINTER_HEAL">
+    <BaseTextureName> icon_target_medic.tga </BaseTextureName>
+    <HotX> 24 </HotX>
+    <HotY> 24 </HotY>
+    <AnimDelaySeconds> 0.0580 </AnimDelaySeconds>
+    <ControllerTargeting> Yes </ControllerTargeting>
+  </MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_DAMAGE">
+		<BaseTextureName> icon_mount_unit_b.tga </BaseTextureName>
+		<HotX> 24 </HotX>
+		<HotY> 24 </HotY>
+		<AnimDelaySeconds> 0.0725 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+	<MousePointerDataClass Name="POINTER_BEACON">
+		<BaseTextureName> icon_ping_placement.tga </BaseTextureName>
+		<HotX> 0 </HotX>
+		<HotY> 0 </HotY>
+		<AnimDelaySeconds> 0.03 </AnimDelaySeconds>
+		<ControllerTargeting> Yes </ControllerTargeting>
+	</MousePointerDataClass>
+
+</MousePointers>

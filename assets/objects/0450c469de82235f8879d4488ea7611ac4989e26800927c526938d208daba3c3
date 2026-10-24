@@ -1,0 +1,14 @@
+# [TD] CrystAlien Conflict Factions
+
+EA has not endorsed and does not support this product.
+
+A total conversion that replaces GDI and Nod with the Astros and Aliens from LEGO Mars Mission: CrystAlien Conflict.
+
+For manual installation, copy this folder to Documents/CnCRemastered/Mods/Tiberian_Dawn/CrystAlienConflict.
+Enable it in the Tiberian Dawn Mods menu and restart. Enable only one of
+Factions and Reinforcements at a time. Both provide their own game DLL.
+Use single-player Skirmish or custom missions; online multiplayer is unsupported.
+
+DLL source and build instructions: Source/CrystAlienConflict-DLL-source.zip.
+See LICENSE-EA-GPLv3.md for the DLL license. Original LEGO / 4T2 artwork,
+music and sound remain the property of their respective owners.
