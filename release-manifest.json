@@ -1,9 +1,613 @@
 {
   "schema": 1,
-  "source_archive_sha256": "5029d27896599da432352de5df27981d13191d0487c431f5b7942953c2498662",
+  "source_archive_sha256": "035b8dc621f28af3d42fd22ca04dbb9c181b9a16043af8a9903e3280530c7d4f",
   "variants": {
     "CrystAlienConflict": {
       "files": {
+        "ccdata/CONSOLE_1/SCB60EA.INI": {
+          "sha256": "88361553a1d5253394a041e21c3c6987fb20344b504133dd3e84d132f1cad866",
+          "source": "assets/objects/88361553a1d5253394a041e21c3c6987fb20344b504133dd3e84d132f1cad866"
+        },
+        "ccdata/CONSOLE_1/SCB61EA.INI": {
+          "sha256": "766d734baa8fe5f03eee2f032147f5cb83ebf7056f4759185d4ceb3da0bd2a42",
+          "source": "assets/objects/766d734baa8fe5f03eee2f032147f5cb83ebf7056f4759185d4ceb3da0bd2a42"
+        },
+        "ccdata/CONSOLE_1/SCG60EA.INI": {
+          "sha256": "91a18eaf30c9ca4f80eb66d2b566d4f7695493c734e74efc56e812355ac15438",
+          "source": "assets/objects/91a18eaf30c9ca4f80eb66d2b566d4f7695493c734e74efc56e812355ac15438"
+        },
+        "ccdata/CONSOLE_1/SCG61EA.INI": {
+          "sha256": "252c64518650ccaacacf3b6dc7e04392d60b994e0b8b8ecba8dd839d3254a8fb",
+          "source": "assets/objects/252c64518650ccaacacf3b6dc7e04392d60b994e0b8b8ecba8dd839d3254a8fb"
+        },
+        "ccdata/CONSOLE_1/SCG62EA.INI": {
+          "sha256": "9b9c334a19ce20ad2d4887ea32668a4c9f8a16b686dc9f0fcae0c47e7ba4ae65",
+          "source": "assets/objects/9b9c334a19ce20ad2d4887ea32668a4c9f8a16b686dc9f0fcae0c47e7ba4ae65"
+        },
+        "ccdata/CONSOLE_1/SCG72EA.INI": {
+          "sha256": "ca5561ab321681f9d628650ab7851085efe1768f510c77c03e587871e939483d",
+          "source": "assets/objects/ca5561ab321681f9d628650ab7851085efe1768f510c77c03e587871e939483d"
+        },
+        "ccdata/CONSOLE_2/SCB21EA.INI": {
+          "sha256": "c51e7a243107dadb5623069cae8ba4232abda34c00ae0fadf988982e4761c75d",
+          "source": "assets/objects/c51e7a243107dadb5623069cae8ba4232abda34c00ae0fadf988982e4761c75d"
+        },
+        "ccdata/CONSOLE_2/SCB22EA.INI": {
+          "sha256": "ff666e2afeb79bee8eab9ff55172fb9c31c8eb7bfd80f8f1c5bf9ea9d19375b7",
+          "source": "assets/objects/ff666e2afeb79bee8eab9ff55172fb9c31c8eb7bfd80f8f1c5bf9ea9d19375b7"
+        },
+        "ccdata/CONSOLE_2/SCG30EA.INI": {
+          "sha256": "7c2edc5f7622ba5c2c5ea54c080f4b62fc8870f6f19dc162f5a56a5ceeb041a1",
+          "source": "assets/objects/7c2edc5f7622ba5c2c5ea54c080f4b62fc8870f6f19dc162f5a56a5ceeb041a1"
+        },
+        "ccdata/CONSOLE_2/SCG90EA.INI": {
+          "sha256": "99ed43ab7d0f8c934b661de8af799f1b8c08603cf32c62451ea7d61f2db6d118",
+          "source": "assets/objects/99ed43ab7d0f8c934b661de8af799f1b8c08603cf32c62451ea7d61f2db6d118"
+        },
+        "ccdata/SCB01EA.INI": {
+          "sha256": "881addadce49ca9cfef70f164e1010587cbc12df5cae9669eacc5e6bbabaf8c8",
+          "source": "assets/objects/881addadce49ca9cfef70f164e1010587cbc12df5cae9669eacc5e6bbabaf8c8"
+        },
+        "ccdata/SCB02EA.INI": {
+          "sha256": "09548d13c741a807bcd443693375a1dca3ca757690b3e187c8ca3c19d987856f",
+          "source": "assets/objects/09548d13c741a807bcd443693375a1dca3ca757690b3e187c8ca3c19d987856f"
+        },
+        "ccdata/SCB02EB.INI": {
+          "sha256": "974e740359e9b0e11720c177e6cfd75e1f781eb5c5ffaf7606e6c48243810217",
+          "source": "assets/objects/974e740359e9b0e11720c177e6cfd75e1f781eb5c5ffaf7606e6c48243810217"
+        },
+        "ccdata/SCB03EA.INI": {
+          "sha256": "ce5492d14068ef9eeb2ab08a20051a90c5d00fede0dd75ddb1da0a7021dc9120",
+          "source": "assets/objects/ce5492d14068ef9eeb2ab08a20051a90c5d00fede0dd75ddb1da0a7021dc9120"
+        },
+        "ccdata/SCB03EB.INI": {
+          "sha256": "cabf2487081137fd1879ef5c11448011f69e888bc0c29ef46ae93c62bc5d588c",
+          "source": "assets/objects/cabf2487081137fd1879ef5c11448011f69e888bc0c29ef46ae93c62bc5d588c"
+        },
+        "ccdata/SCB04EA.INI": {
+          "sha256": "df9dcfed7afce26dbb62a2199ef39b2eac74369bb6d179ddb10eb9506157e20d",
+          "source": "assets/objects/df9dcfed7afce26dbb62a2199ef39b2eac74369bb6d179ddb10eb9506157e20d"
+        },
+        "ccdata/SCB04EB.INI": {
+          "sha256": "e5d96b424d32a7f5dc08555d8dc4ef9d0a8a56efdc81bf60176dbc6d4579452e",
+          "source": "assets/objects/e5d96b424d32a7f5dc08555d8dc4ef9d0a8a56efdc81bf60176dbc6d4579452e"
+        },
+        "ccdata/SCB05EA.INI": {
+          "sha256": "7a6ac9e3f2e3cc15967f136027cd4030a62e5df106c1cc558e5410373c4ad73d",
+          "source": "assets/objects/7a6ac9e3f2e3cc15967f136027cd4030a62e5df106c1cc558e5410373c4ad73d"
+        },
+        "ccdata/SCB06EA.INI": {
+          "sha256": "118ea862e33f3b6379b861aa2964e618b8d8cd6e689b9988d9ce73e9060d18e9",
+          "source": "assets/objects/118ea862e33f3b6379b861aa2964e618b8d8cd6e689b9988d9ce73e9060d18e9"
+        },
+        "ccdata/SCB06EB.INI": {
+          "sha256": "10796fdcf34d781be9f06154e6ca2a9eb6b4bef7e41377afef93b1d70d4b980b",
+          "source": "assets/objects/10796fdcf34d781be9f06154e6ca2a9eb6b4bef7e41377afef93b1d70d4b980b"
+        },
+        "ccdata/SCB06EC.INI": {
+          "sha256": "22c1587fc8dbd38ae103261b40c99f84adfd2ea88207ef1711d0be8e39c01617",
+          "source": "assets/objects/22c1587fc8dbd38ae103261b40c99f84adfd2ea88207ef1711d0be8e39c01617"
+        },
+        "ccdata/SCB07EA.INI": {
+          "sha256": "77214cdeb22a16f8e410400c5717e5fd718faef7d7aef8568f33e94233c11d47",
+          "source": "assets/objects/77214cdeb22a16f8e410400c5717e5fd718faef7d7aef8568f33e94233c11d47"
+        },
+        "ccdata/SCB07EB.INI": {
+          "sha256": "d7fa0dad9507d65267a6b136dbda530f39d106e6c2accddd3e12e30614ce4828",
+          "source": "assets/objects/d7fa0dad9507d65267a6b136dbda530f39d106e6c2accddd3e12e30614ce4828"
+        },
+        "ccdata/SCB07EC.INI": {
+          "sha256": "336015775033cbe08c03c1873b53f91c48f7d05f0a0686c0ed1525f4aca6bdf1",
+          "source": "assets/objects/336015775033cbe08c03c1873b53f91c48f7d05f0a0686c0ed1525f4aca6bdf1"
+        },
+        "ccdata/SCB08EA.INI": {
+          "sha256": "e377be19896c7b242dadd69930a5455f60dac61f428596793665afd4a12a0336",
+          "source": "assets/objects/e377be19896c7b242dadd69930a5455f60dac61f428596793665afd4a12a0336"
+        },
+        "ccdata/SCB08EB.INI": {
+          "sha256": "2b3140ab8b449d472efb4e79b856e78fb4804968f95928d2496c800d24330f96",
+          "source": "assets/objects/2b3140ab8b449d472efb4e79b856e78fb4804968f95928d2496c800d24330f96"
+        },
+        "ccdata/SCB09EA.INI": {
+          "sha256": "db38a44807cf7b52c14649c2320d3eceff240c6801923a1adb7f739b97d21b57",
+          "source": "assets/objects/db38a44807cf7b52c14649c2320d3eceff240c6801923a1adb7f739b97d21b57"
+        },
+        "ccdata/SCB10EA.INI": {
+          "sha256": "7aebeb0bcd615c86e871433a956cb30cd8455b14082e809c26694200719f6b91",
+          "source": "assets/objects/7aebeb0bcd615c86e871433a956cb30cd8455b14082e809c26694200719f6b91"
+        },
+        "ccdata/SCB10EB.INI": {
+          "sha256": "f75d208078335fbfbe0dca4db82dbc60602841cbb65c7739a5a7c2ed3d81bb15",
+          "source": "assets/objects/f75d208078335fbfbe0dca4db82dbc60602841cbb65c7739a5a7c2ed3d81bb15"
+        },
+        "ccdata/SCB11EA.INI": {
+          "sha256": "98769e1d08b055a922450dcf86566568818933f9a8d592a04da980af5bb5ba6b",
+          "source": "assets/objects/98769e1d08b055a922450dcf86566568818933f9a8d592a04da980af5bb5ba6b"
+        },
+        "ccdata/SCB11EB.INI": {
+          "sha256": "b23dcc82ef3b473fb68711d9c7a196650b5fd251b0c867b92dae24991747cf5b",
+          "source": "assets/objects/b23dcc82ef3b473fb68711d9c7a196650b5fd251b0c867b92dae24991747cf5b"
+        },
+        "ccdata/SCB12EA.INI": {
+          "sha256": "263cdda7e06476ae3fa436a72f18454944d99deb356cc72a82053c4ee34a4f76",
+          "source": "assets/objects/263cdda7e06476ae3fa436a72f18454944d99deb356cc72a82053c4ee34a4f76"
+        },
+        "ccdata/SCB13EA.INI": {
+          "sha256": "c6265c470fb060d37dade8389f13ee4641e69a050277386bcc9db88b80808e91",
+          "source": "assets/objects/c6265c470fb060d37dade8389f13ee4641e69a050277386bcc9db88b80808e91"
+        },
+        "ccdata/SCB13EB.INI": {
+          "sha256": "afe6bce64ee3c19a6b96b1cd9a66c81f9bf29a7b481e188fa9d633739c32d14d",
+          "source": "assets/objects/afe6bce64ee3c19a6b96b1cd9a66c81f9bf29a7b481e188fa9d633739c32d14d"
+        },
+        "ccdata/SCB13EC.INI": {
+          "sha256": "f4b6eea34bf679f24f3a809c3ce5603925f01846b89c7d461234e434d09ff739",
+          "source": "assets/objects/f4b6eea34bf679f24f3a809c3ce5603925f01846b89c7d461234e434d09ff739"
+        },
+        "ccdata/SCB20EA.INI": {
+          "sha256": "790420a72fea3e25e0f32a37173711af44cdef432eb9831ea0c8c90cf7168504",
+          "source": "assets/objects/790420a72fea3e25e0f32a37173711af44cdef432eb9831ea0c8c90cf7168504"
+        },
+        "ccdata/SCB21EA.INI": {
+          "sha256": "43cb37c9bbb07a5e805dfefb1ad8acdc626c297d07e46c73f355fe20953a618b",
+          "source": "assets/objects/43cb37c9bbb07a5e805dfefb1ad8acdc626c297d07e46c73f355fe20953a618b"
+        },
+        "ccdata/SCB30EA.INI": {
+          "sha256": "c475493e4ba4261408e9a3ba192ba9560d5541e04637aa35f802706c02972ed9",
+          "source": "assets/objects/c475493e4ba4261408e9a3ba192ba9560d5541e04637aa35f802706c02972ed9"
+        },
+        "ccdata/SCB31EA.INI": {
+          "sha256": "032e119fe26efd80ef40a9ba70199b900983992fb6af131974834353c6deec0c",
+          "source": "assets/objects/032e119fe26efd80ef40a9ba70199b900983992fb6af131974834353c6deec0c"
+        },
+        "ccdata/SCB32EA.INI": {
+          "sha256": "f4b54a14949fee477464bf62505cfb2c6b5bd82adf5ff84d571c4b296c92f946",
+          "source": "assets/objects/f4b54a14949fee477464bf62505cfb2c6b5bd82adf5ff84d571c4b296c92f946"
+        },
+        "ccdata/SCB33EA.INI": {
+          "sha256": "8a2924b3a835b82e8d7e4da94994e6aeb46554f9f0246d55dd94dd8f4d3f7766",
+          "source": "assets/objects/8a2924b3a835b82e8d7e4da94994e6aeb46554f9f0246d55dd94dd8f4d3f7766"
+        },
+        "ccdata/SCB35EA.INI": {
+          "sha256": "b521c1852fc34b37b7d2d50b7acc8531433887a4bcdad41c5a2ea071dcfc6de3",
+          "source": "assets/objects/b521c1852fc34b37b7d2d50b7acc8531433887a4bcdad41c5a2ea071dcfc6de3"
+        },
+        "ccdata/SCB37EA.INI": {
+          "sha256": "33c9a22c2d0b7dfdce9d2abe7dbc259daf231401dfb78ef0c4f309b08926b231",
+          "source": "assets/objects/33c9a22c2d0b7dfdce9d2abe7dbc259daf231401dfb78ef0c4f309b08926b231"
+        },
+        "ccdata/SCC06EA.INI": {
+          "sha256": "22c1587fc8dbd38ae103261b40c99f84adfd2ea88207ef1711d0be8e39c01617",
+          "source": "assets/objects/22c1587fc8dbd38ae103261b40c99f84adfd2ea88207ef1711d0be8e39c01617"
+        },
+        "ccdata/SCC07EA.INI": {
+          "sha256": "336015775033cbe08c03c1873b53f91c48f7d05f0a0686c0ed1525f4aca6bdf1",
+          "source": "assets/objects/336015775033cbe08c03c1873b53f91c48f7d05f0a0686c0ed1525f4aca6bdf1"
+        },
+        "ccdata/SCC13EA.INI": {
+          "sha256": "f4b6eea34bf679f24f3a809c3ce5603925f01846b89c7d461234e434d09ff739",
+          "source": "assets/objects/f4b6eea34bf679f24f3a809c3ce5603925f01846b89c7d461234e434d09ff739"
+        },
+        "ccdata/SCCAC.MIX": {
+          "sha256": "78dcd221b75d06212badf7405290309de571f18c47ad07322dbe47d1314a3b0f",
+          "source": "assets/objects/78dcd221b75d06212badf7405290309de571f18c47ad07322dbe47d1314a3b0f"
+        },
+        "ccdata/SCG01EA.INI": {
+          "sha256": "327db1b0dae01f58f230e85b4f9ff95a921b777866591b137f671531f8491b20",
+          "source": "assets/objects/327db1b0dae01f58f230e85b4f9ff95a921b777866591b137f671531f8491b20"
+        },
+        "ccdata/SCG01EG.INI": {
+          "sha256": "18b1bedd56c6c92f11bb8f7d82e1504cd4ed0bf9cae21e4eb155622615886666",
+          "source": "assets/objects/18b1bedd56c6c92f11bb8f7d82e1504cd4ed0bf9cae21e4eb155622615886666"
+        },
+        "ccdata/SCG02EA.INI": {
+          "sha256": "dfdb8da7a9b1c10d61da0b36d7ec04025ee9ef0a8fb8123988a3a5a9610ec8da",
+          "source": "assets/objects/dfdb8da7a9b1c10d61da0b36d7ec04025ee9ef0a8fb8123988a3a5a9610ec8da"
+        },
+        "ccdata/SCG02EG.INI": {
+          "sha256": "f0a9235c73165fb6a385779bc3a0ca3c062e029024244af67e1c1293d34cb22c",
+          "source": "assets/objects/f0a9235c73165fb6a385779bc3a0ca3c062e029024244af67e1c1293d34cb22c"
+        },
+        "ccdata/SCG03EA.INI": {
+          "sha256": "38e63c5c446e50f720c87588a498cf228a8bfaaaa3cbc914abbd3b1146e68bf7",
+          "source": "assets/objects/38e63c5c446e50f720c87588a498cf228a8bfaaaa3cbc914abbd3b1146e68bf7"
+        },
+        "ccdata/SCG03EG.INI": {
+          "sha256": "5f88fa7986a8ecdf57d3e617ba884ed85bed028bb569fff4ac81493dc17d4873",
+          "source": "assets/objects/5f88fa7986a8ecdf57d3e617ba884ed85bed028bb569fff4ac81493dc17d4873"
+        },
+        "ccdata/SCG04EA.INI": {
+          "sha256": "c559fb4064284242b5184131af937d402914d421a00daab7b392d95023689df7",
+          "source": "assets/objects/c559fb4064284242b5184131af937d402914d421a00daab7b392d95023689df7"
+        },
+        "ccdata/SCG04EG.INI": {
+          "sha256": "5e27696c98da21558321ce0cb9544d66849915bb659ae1b9445f266bf0760d7d",
+          "source": "assets/objects/5e27696c98da21558321ce0cb9544d66849915bb659ae1b9445f266bf0760d7d"
+        },
+        "ccdata/SCG04WA.INI": {
+          "sha256": "148f63f3978be0e64d0fb0ddbadcf9bde46cca3df317e4efc729d34934964925",
+          "source": "assets/objects/148f63f3978be0e64d0fb0ddbadcf9bde46cca3df317e4efc729d34934964925"
+        },
+        "ccdata/SCG04WB.INI": {
+          "sha256": "62aac48e3f5ad5b79b674303d32520255b9fb6cc711f83167e1aff7d98abe347",
+          "source": "assets/objects/62aac48e3f5ad5b79b674303d32520255b9fb6cc711f83167e1aff7d98abe347"
+        },
+        "ccdata/SCG05EA.INI": {
+          "sha256": "46e694b7cae4570924a625b0062f5c5b0114689f89f32a07710be2fa7af0486c",
+          "source": "assets/objects/46e694b7cae4570924a625b0062f5c5b0114689f89f32a07710be2fa7af0486c"
+        },
+        "ccdata/SCG05EB.INI": {
+          "sha256": "f287a4d4910fdb508feec4c21eda754a36172da5e8621722ae48003bb50083ca",
+          "source": "assets/objects/f287a4d4910fdb508feec4c21eda754a36172da5e8621722ae48003bb50083ca"
+        },
+        "ccdata/SCG05EG.INI": {
+          "sha256": "95d15c75c41d238da79955e7a235f896c45b9db21f8ef8d3cb8e3e40fcef2347",
+          "source": "assets/objects/95d15c75c41d238da79955e7a235f896c45b9db21f8ef8d3cb8e3e40fcef2347"
+        },
+        "ccdata/SCG05WA.INI": {
+          "sha256": "75e3d446c36bbdafc8ea38ebc40b975c7aad23cd76a8e51209de5d7c078b4c56",
+          "source": "assets/objects/75e3d446c36bbdafc8ea38ebc40b975c7aad23cd76a8e51209de5d7c078b4c56"
+        },
+        "ccdata/SCG05WB.INI": {
+          "sha256": "e0754d2298a8b77e557129a85bcac411c65ff64b9c22c8931ebd5c9c204b23e5",
+          "source": "assets/objects/e0754d2298a8b77e557129a85bcac411c65ff64b9c22c8931ebd5c9c204b23e5"
+        },
+        "ccdata/SCG06EA.INI": {
+          "sha256": "b0459f3e559f1ab8a223349e79f778657e865136b5321f86ee3c382493b134c5",
+          "source": "assets/objects/b0459f3e559f1ab8a223349e79f778657e865136b5321f86ee3c382493b134c5"
+        },
+        "ccdata/SCG07EA.INI": {
+          "sha256": "ecc8b1b07353704042b091064e6406c1cb49624178404191cf2e34a0bd561873",
+          "source": "assets/objects/ecc8b1b07353704042b091064e6406c1cb49624178404191cf2e34a0bd561873"
+        },
+        "ccdata/SCG08EA.INI": {
+          "sha256": "01a9e92125f5412252956c033eb2e65f07b4b25caa24dab195ab44977c09a979",
+          "source": "assets/objects/01a9e92125f5412252956c033eb2e65f07b4b25caa24dab195ab44977c09a979"
+        },
+        "ccdata/SCG08EB.INI": {
+          "sha256": "30b1693d960a8c0d4ae581125159e9741ffcee4bb800dc952a36ff1199aca7d3",
+          "source": "assets/objects/30b1693d960a8c0d4ae581125159e9741ffcee4bb800dc952a36ff1199aca7d3"
+        },
+        "ccdata/SCG09EA.INI": {
+          "sha256": "7f4e929bc4e9c40f002d176ba34d773b77d64043534817928971378f75ed9dc6",
+          "source": "assets/objects/7f4e929bc4e9c40f002d176ba34d773b77d64043534817928971378f75ed9dc6"
+        },
+        "ccdata/SCG10EA.INI": {
+          "sha256": "16445478a339720f9e3b7113defd61530a7370d9891bc63e2af92b87fdb178ac",
+          "source": "assets/objects/16445478a339720f9e3b7113defd61530a7370d9891bc63e2af92b87fdb178ac"
+        },
+        "ccdata/SCG10EB.INI": {
+          "sha256": "58a8895f696f023c8cf06aea26022059660f5dc8f4e187dff362771c1fb786cd",
+          "source": "assets/objects/58a8895f696f023c8cf06aea26022059660f5dc8f4e187dff362771c1fb786cd"
+        },
+        "ccdata/SCG11EA.INI": {
+          "sha256": "c6d37f87ed3f0cfa87b6d1d75b170c8a99fc1d2d704b47a2b39994238ca4c4cc",
+          "source": "assets/objects/c6d37f87ed3f0cfa87b6d1d75b170c8a99fc1d2d704b47a2b39994238ca4c4cc"
+        },
+        "ccdata/SCG12EA.INI": {
+          "sha256": "6e7826286414dc49293e75587e30e996fc59c41b8a1628ebdec0af6457dc52bf",
+          "source": "assets/objects/6e7826286414dc49293e75587e30e996fc59c41b8a1628ebdec0af6457dc52bf"
+        },
+        "ccdata/SCG12EB.INI": {
+          "sha256": "0c96aa4ff7dd55ae28e7cd3a4c0dde133f436729c3e80184d4ac9c92ebc7a0bf",
+          "source": "assets/objects/0c96aa4ff7dd55ae28e7cd3a4c0dde133f436729c3e80184d4ac9c92ebc7a0bf"
+        },
+        "ccdata/SCG13EA.INI": {
+          "sha256": "2c220c1f2d93811eb2359920c42583249b61c5d4865d7a5dda9da7ac8dded085",
+          "source": "assets/objects/2c220c1f2d93811eb2359920c42583249b61c5d4865d7a5dda9da7ac8dded085"
+        },
+        "ccdata/SCG13EB.INI": {
+          "sha256": "2c220c1f2d93811eb2359920c42583249b61c5d4865d7a5dda9da7ac8dded085",
+          "source": "assets/objects/2c220c1f2d93811eb2359920c42583249b61c5d4865d7a5dda9da7ac8dded085"
+        },
+        "ccdata/SCG14EA.INI": {
+          "sha256": "f748bd73dae6d4e5f9b347e12ffd7ca1471df19734f55a0d7765e3ebc83ddb6a",
+          "source": "assets/objects/f748bd73dae6d4e5f9b347e12ffd7ca1471df19734f55a0d7765e3ebc83ddb6a"
+        },
+        "ccdata/SCG15EA.INI": {
+          "sha256": "4fb0b086faa6be86a696f60bee62036eb3e2e05f1836ba510abe8867dadb4a69",
+          "source": "assets/objects/4fb0b086faa6be86a696f60bee62036eb3e2e05f1836ba510abe8867dadb4a69"
+        },
+        "ccdata/SCG15EB.INI": {
+          "sha256": "7eeba8c6d827e8a93ad2ecf3b243c6c2fb50be658753f1196ed789c8981c4526",
+          "source": "assets/objects/7eeba8c6d827e8a93ad2ecf3b243c6c2fb50be658753f1196ed789c8981c4526"
+        },
+        "ccdata/SCG15EC.INI": {
+          "sha256": "9870e5380381af98d5b9a8cf6fef862a9479ea238d8ae21062dd89cf365c1cc5",
+          "source": "assets/objects/9870e5380381af98d5b9a8cf6fef862a9479ea238d8ae21062dd89cf365c1cc5"
+        },
+        "ccdata/SCG22EA.INI": {
+          "sha256": "1628fcd43259fa12618d125fac928f9dc81ac11a6595b63929e02de2e4952a0a",
+          "source": "assets/objects/1628fcd43259fa12618d125fac928f9dc81ac11a6595b63929e02de2e4952a0a"
+        },
+        "ccdata/SCG23EA.INI": {
+          "sha256": "1578e845a98d6969bdb96de5d32185de5e43f9b0ef791dc57b4a8e63f347765c",
+          "source": "assets/objects/1578e845a98d6969bdb96de5d32185de5e43f9b0ef791dc57b4a8e63f347765c"
+        },
+        "ccdata/SCG36EA.INI": {
+          "sha256": "07dfc06623596b022c4eb2abefb802babca8800ea857e5506646f44dabbf664e",
+          "source": "assets/objects/07dfc06623596b022c4eb2abefb802babca8800ea857e5506646f44dabbf664e"
+        },
+        "ccdata/SCG38EA.INI": {
+          "sha256": "01f697bf474afe418790683033130b4ed77ff6b2ad360e9753835d521991ff9c",
+          "source": "assets/objects/01f697bf474afe418790683033130b4ed77ff6b2ad360e9753835d521991ff9c"
+        },
+        "ccdata/SCG40EA.INI": {
+          "sha256": "176865d6985708ea3d174c853e41d0982a2674f5971d83ed761bd5d7091c6d8d",
+          "source": "assets/objects/176865d6985708ea3d174c853e41d0982a2674f5971d83ed761bd5d7091c6d8d"
+        },
+        "ccdata/SCG41EA.INI": {
+          "sha256": "5194496025c23482a44fcdeb22360dcd4628ca07f3ee123ec3cfe6d0ec38a07b",
+          "source": "assets/objects/5194496025c23482a44fcdeb22360dcd4628ca07f3ee123ec3cfe6d0ec38a07b"
+        },
+        "ccdata/SCG50EA.INI": {
+          "sha256": "127d681f56cd3d5b0135689f7823c19171cdb796dc6c937e896e6abbcf10e75f",
+          "source": "assets/objects/127d681f56cd3d5b0135689f7823c19171cdb796dc6c937e896e6abbcf10e75f"
+        },
+        "ccdata/SCJ01EA.INI": {
+          "sha256": "18b1bedd56c6c92f11bb8f7d82e1504cd4ed0bf9cae21e4eb155622615886666",
+          "source": "assets/objects/18b1bedd56c6c92f11bb8f7d82e1504cd4ed0bf9cae21e4eb155622615886666"
+        },
+        "ccdata/SCJ01EG.INI": {
+          "sha256": "b5c1a559dd4cc66e34d09ec4b9340b7d2fd191a50e8915b4cc2f10cebc31bef1",
+          "source": "assets/objects/b5c1a559dd4cc66e34d09ec4b9340b7d2fd191a50e8915b4cc2f10cebc31bef1"
+        },
+        "ccdata/SCJ02EA.INI": {
+          "sha256": "f0a9235c73165fb6a385779bc3a0ca3c062e029024244af67e1c1293d34cb22c",
+          "source": "assets/objects/f0a9235c73165fb6a385779bc3a0ca3c062e029024244af67e1c1293d34cb22c"
+        },
+        "ccdata/SCJ02EG.INI": {
+          "sha256": "d9f2916f5f00ad048cf8c53853d3458d4b514f322aa7743ac5e84e6b6efc4081",
+          "source": "assets/objects/d9f2916f5f00ad048cf8c53853d3458d4b514f322aa7743ac5e84e6b6efc4081"
+        },
+        "ccdata/SCJ03EA.INI": {
+          "sha256": "5f88fa7986a8ecdf57d3e617ba884ed85bed028bb569fff4ac81493dc17d4873",
+          "source": "assets/objects/5f88fa7986a8ecdf57d3e617ba884ed85bed028bb569fff4ac81493dc17d4873"
+        },
+        "ccdata/SCJ03EG.INI": {
+          "sha256": "cfb1d5fc6ee8f579d9059cbf95f9a37b56492ec7a42b25b94e038c3ec1093192",
+          "source": "assets/objects/cfb1d5fc6ee8f579d9059cbf95f9a37b56492ec7a42b25b94e038c3ec1093192"
+        },
+        "ccdata/SCJ04EA.INI": {
+          "sha256": "5e27696c98da21558321ce0cb9544d66849915bb659ae1b9445f266bf0760d7d",
+          "source": "assets/objects/5e27696c98da21558321ce0cb9544d66849915bb659ae1b9445f266bf0760d7d"
+        },
+        "ccdata/SCJ04EG.INI": {
+          "sha256": "3b88b90b7155faabe057620256683c98a8df409c74a0d0e73c8e8973eec36a58",
+          "source": "assets/objects/3b88b90b7155faabe057620256683c98a8df409c74a0d0e73c8e8973eec36a58"
+        },
+        "ccdata/SCJ05EA.INI": {
+          "sha256": "95d15c75c41d238da79955e7a235f896c45b9db21f8ef8d3cb8e3e40fcef2347",
+          "source": "assets/objects/95d15c75c41d238da79955e7a235f896c45b9db21f8ef8d3cb8e3e40fcef2347"
+        },
+        "ccdata/SCJ05EG.INI": {
+          "sha256": "b621dcc05fb29ab43c0f0129ee3d02db0893266b814ae2342be8669109d60ba9",
+          "source": "assets/objects/b621dcc05fb29ab43c0f0129ee3d02db0893266b814ae2342be8669109d60ba9"
+        },
+        "ccdata/SCJ06EG.INI": {
+          "sha256": "678a175b6b1c9dafb3890bbe2cc3aad5715554849b30f837e534caa3753ed4a9",
+          "source": "assets/objects/678a175b6b1c9dafb3890bbe2cc3aad5715554849b30f837e534caa3753ed4a9"
+        },
+        "ccdata/SCJ07EG.INI": {
+          "sha256": "ff30afa3a13a8eb5411fa430b109e89c30cfbee8b63da00699060e713a8cebcd",
+          "source": "assets/objects/ff30afa3a13a8eb5411fa430b109e89c30cfbee8b63da00699060e713a8cebcd"
+        },
+        "ccdata/SCJ08EG.INI": {
+          "sha256": "4f1f28eef8852a0bf5505b3435e19e0926abc5c59f54c6ca672c6f845f93dbd9",
+          "source": "assets/objects/4f1f28eef8852a0bf5505b3435e19e0926abc5c59f54c6ca672c6f845f93dbd9"
+        },
+        "ccdata/SCJ09EG.INI": {
+          "sha256": "ab540b57cc1898abf2399ac13400ad83b314c5aa4293bc31990a46b47bd154ed",
+          "source": "assets/objects/ab540b57cc1898abf2399ac13400ad83b314c5aa4293bc31990a46b47bd154ed"
+        },
+        "ccdata/SCJ10EG.INI": {
+          "sha256": "5353e4c33513895b72f632ff438167f4c50f583720a18db4004cc8f4fe87c613",
+          "source": "assets/objects/5353e4c33513895b72f632ff438167f4c50f583720a18db4004cc8f4fe87c613"
+        },
+        "ccdata/SCJ50EG.INI": {
+          "sha256": "5555f5d59c9e7f14ff7fa5802861fce211e11ff7bed2c0cc72fc922a0bc1cf9d",
+          "source": "assets/objects/5555f5d59c9e7f14ff7fa5802861fce211e11ff7bed2c0cc72fc922a0bc1cf9d"
+        },
+        "ccdata/SCJ51EG.INI": {
+          "sha256": "347dfe6961b9a7a681ed17849adb1eae2dd2a7ffe46bdc02e7a72c7445f6638c",
+          "source": "assets/objects/347dfe6961b9a7a681ed17849adb1eae2dd2a7ffe46bdc02e7a72c7445f6638c"
+        },
+        "ccdata/SCJ52EG.INI": {
+          "sha256": "efd91104d3eb777ae43c20c15167db2f3a5ef88dc2ae2b77c1b6d3d33bdc499c",
+          "source": "assets/objects/efd91104d3eb777ae43c20c15167db2f3a5ef88dc2ae2b77c1b6d3d33bdc499c"
+        },
+        "ccdata/SCJ60EG.INI": {
+          "sha256": "9f6ad42e4fe27e3f926860776edd543832ced22c6d33ff714f3481b379cd7060",
+          "source": "assets/objects/9f6ad42e4fe27e3f926860776edd543832ced22c6d33ff714f3481b379cd7060"
+        },
+        "ccdata/SCJ61EG.INI": {
+          "sha256": "4bd2938a68545ebc3595c740572119224faa5c8c3cf1191716e8cb6afe53304e",
+          "source": "assets/objects/4bd2938a68545ebc3595c740572119224faa5c8c3cf1191716e8cb6afe53304e"
+        },
+        "ccdata/SCJ62EG.INI": {
+          "sha256": "328f685897e8ce33c119a8f7806acafa1f50efdde4842499d68e3ec7587414a1",
+          "source": "assets/objects/328f685897e8ce33c119a8f7806acafa1f50efdde4842499d68e3ec7587414a1"
+        },
+        "ccdata/SCJ70EG.INI": {
+          "sha256": "3d2e0f18b49a9d469a77ee5fc6b9cf201e21a1813bc3b668cb0e33c406f6cecf",
+          "source": "assets/objects/3d2e0f18b49a9d469a77ee5fc6b9cf201e21a1813bc3b668cb0e33c406f6cecf"
+        },
+        "ccdata/SCJ71EG.INI": {
+          "sha256": "66ead1c1aa17510b9cea7d29a3a14cb3caa2c48115b0211669f205b1610357ae",
+          "source": "assets/objects/66ead1c1aa17510b9cea7d29a3a14cb3caa2c48115b0211669f205b1610357ae"
+        },
+        "ccdata/SCJ72EG.INI": {
+          "sha256": "d8555926ea6564f6ab699c4c7dea85c476cdf01d0397dc8fc9c80246fedf1dd8",
+          "source": "assets/objects/d8555926ea6564f6ab699c4c7dea85c476cdf01d0397dc8fc9c80246fedf1dd8"
+        },
+        "ccdata/SCJ73EG.INI": {
+          "sha256": "1c90f6b3f53d35ee32fa2175e20c0bfad51e225d85be08c1ad2f0c6bbbc5016a",
+          "source": "assets/objects/1c90f6b3f53d35ee32fa2175e20c0bfad51e225d85be08c1ad2f0c6bbbc5016a"
+        },
+        "ccdata/SCJ74EG.INI": {
+          "sha256": "6a8046f07e1f2c2c7af67064b4d794e1f6c9fd28edf83e74103d02803fed9d2f",
+          "source": "assets/objects/6a8046f07e1f2c2c7af67064b4d794e1f6c9fd28edf83e74103d02803fed9d2f"
+        },
+        "ccdata/SCJ75EG.INI": {
+          "sha256": "5be8cce32f49fb96f74f3fe56133fd1af6501f075af122efa84dfd25df8bab73",
+          "source": "assets/objects/5be8cce32f49fb96f74f3fe56133fd1af6501f075af122efa84dfd25df8bab73"
+        },
+        "ccdata/SCJ77EG.INI": {
+          "sha256": "4cf9ce0d276d3725e0b8cc1ca15c12a63a51f93270af2b0aa631496b90592aec",
+          "source": "assets/objects/4cf9ce0d276d3725e0b8cc1ca15c12a63a51f93270af2b0aa631496b90592aec"
+        },
+        "ccdata/SCJ90EG.INI": {
+          "sha256": "ff58beed8de3129b19e0e818b77de8e1c16e2bd224b4a1bb359fe2a7cf4e1883",
+          "source": "assets/objects/ff58beed8de3129b19e0e818b77de8e1c16e2bd224b4a1bb359fe2a7cf4e1883"
+        },
+        "ccdata/SCJ96EG.INI": {
+          "sha256": "ae8cd985bdb1a7975b4b30618f183ede255c7725db54e62cb642bc9dceca17a5",
+          "source": "assets/objects/ae8cd985bdb1a7975b4b30618f183ede255c7725db54e62cb642bc9dceca17a5"
+        },
+        "ccdata/SCJ97EG.INI": {
+          "sha256": "e53f9bb41f2c0ce5636544b68f0e5aadfff84f76e31a7b3b96d601a237e584b7",
+          "source": "assets/objects/e53f9bb41f2c0ce5636544b68f0e5aadfff84f76e31a7b3b96d601a237e584b7"
+        },
+        "ccdata/SCJ98EG.INI": {
+          "sha256": "200674ee04c8a17f498c84e003d4d7b2879c6d3a23510bfc43298e85ff21285b",
+          "source": "assets/objects/200674ee04c8a17f498c84e003d4d7b2879c6d3a23510bfc43298e85ff21285b"
+        },
+        "ccdata/SCM01EA.INI": {
+          "sha256": "b5c1a559dd4cc66e34d09ec4b9340b7d2fd191a50e8915b4cc2f10cebc31bef1",
+          "source": "assets/objects/b5c1a559dd4cc66e34d09ec4b9340b7d2fd191a50e8915b4cc2f10cebc31bef1"
+        },
+        "ccdata/SCM02EA.INI": {
+          "sha256": "d9f2916f5f00ad048cf8c53853d3458d4b514f322aa7743ac5e84e6b6efc4081",
+          "source": "assets/objects/d9f2916f5f00ad048cf8c53853d3458d4b514f322aa7743ac5e84e6b6efc4081"
+        },
+        "ccdata/SCM03EA.INI": {
+          "sha256": "cfb1d5fc6ee8f579d9059cbf95f9a37b56492ec7a42b25b94e038c3ec1093192",
+          "source": "assets/objects/cfb1d5fc6ee8f579d9059cbf95f9a37b56492ec7a42b25b94e038c3ec1093192"
+        },
+        "ccdata/SCM04EA.INI": {
+          "sha256": "3b88b90b7155faabe057620256683c98a8df409c74a0d0e73c8e8973eec36a58",
+          "source": "assets/objects/3b88b90b7155faabe057620256683c98a8df409c74a0d0e73c8e8973eec36a58"
+        },
+        "ccdata/SCM05EA.INI": {
+          "sha256": "b621dcc05fb29ab43c0f0129ee3d02db0893266b814ae2342be8669109d60ba9",
+          "source": "assets/objects/b621dcc05fb29ab43c0f0129ee3d02db0893266b814ae2342be8669109d60ba9"
+        },
+        "ccdata/SCM06EA.INI": {
+          "sha256": "678a175b6b1c9dafb3890bbe2cc3aad5715554849b30f837e534caa3753ed4a9",
+          "source": "assets/objects/678a175b6b1c9dafb3890bbe2cc3aad5715554849b30f837e534caa3753ed4a9"
+        },
+        "ccdata/SCM07EA.INI": {
+          "sha256": "ff30afa3a13a8eb5411fa430b109e89c30cfbee8b63da00699060e713a8cebcd",
+          "source": "assets/objects/ff30afa3a13a8eb5411fa430b109e89c30cfbee8b63da00699060e713a8cebcd"
+        },
+        "ccdata/SCM08EA.INI": {
+          "sha256": "4f1f28eef8852a0bf5505b3435e19e0926abc5c59f54c6ca672c6f845f93dbd9",
+          "source": "assets/objects/4f1f28eef8852a0bf5505b3435e19e0926abc5c59f54c6ca672c6f845f93dbd9"
+        },
+        "ccdata/SCM09EA.INI": {
+          "sha256": "ab540b57cc1898abf2399ac13400ad83b314c5aa4293bc31990a46b47bd154ed",
+          "source": "assets/objects/ab540b57cc1898abf2399ac13400ad83b314c5aa4293bc31990a46b47bd154ed"
+        },
+        "ccdata/SCM10EA.INI": {
+          "sha256": "5353e4c33513895b72f632ff438167f4c50f583720a18db4004cc8f4fe87c613",
+          "source": "assets/objects/5353e4c33513895b72f632ff438167f4c50f583720a18db4004cc8f4fe87c613"
+        },
+        "ccdata/SCM50EA.INI": {
+          "sha256": "5555f5d59c9e7f14ff7fa5802861fce211e11ff7bed2c0cc72fc922a0bc1cf9d",
+          "source": "assets/objects/5555f5d59c9e7f14ff7fa5802861fce211e11ff7bed2c0cc72fc922a0bc1cf9d"
+        },
+        "ccdata/SCM51EA.INI": {
+          "sha256": "347dfe6961b9a7a681ed17849adb1eae2dd2a7ffe46bdc02e7a72c7445f6638c",
+          "source": "assets/objects/347dfe6961b9a7a681ed17849adb1eae2dd2a7ffe46bdc02e7a72c7445f6638c"
+        },
+        "ccdata/SCM52EA.INI": {
+          "sha256": "efd91104d3eb777ae43c20c15167db2f3a5ef88dc2ae2b77c1b6d3d33bdc499c",
+          "source": "assets/objects/efd91104d3eb777ae43c20c15167db2f3a5ef88dc2ae2b77c1b6d3d33bdc499c"
+        },
+        "ccdata/SCM60EA.INI": {
+          "sha256": "9f6ad42e4fe27e3f926860776edd543832ced22c6d33ff714f3481b379cd7060",
+          "source": "assets/objects/9f6ad42e4fe27e3f926860776edd543832ced22c6d33ff714f3481b379cd7060"
+        },
+        "ccdata/SCM61EA.INI": {
+          "sha256": "4bd2938a68545ebc3595c740572119224faa5c8c3cf1191716e8cb6afe53304e",
+          "source": "assets/objects/4bd2938a68545ebc3595c740572119224faa5c8c3cf1191716e8cb6afe53304e"
+        },
+        "ccdata/SCM62EA.INI": {
+          "sha256": "328f685897e8ce33c119a8f7806acafa1f50efdde4842499d68e3ec7587414a1",
+          "source": "assets/objects/328f685897e8ce33c119a8f7806acafa1f50efdde4842499d68e3ec7587414a1"
+        },
+        "ccdata/SCM70EA.INI": {
+          "sha256": "3d2e0f18b49a9d469a77ee5fc6b9cf201e21a1813bc3b668cb0e33c406f6cecf",
+          "source": "assets/objects/3d2e0f18b49a9d469a77ee5fc6b9cf201e21a1813bc3b668cb0e33c406f6cecf"
+        },
+        "ccdata/SCM71EA.INI": {
+          "sha256": "66ead1c1aa17510b9cea7d29a3a14cb3caa2c48115b0211669f205b1610357ae",
+          "source": "assets/objects/66ead1c1aa17510b9cea7d29a3a14cb3caa2c48115b0211669f205b1610357ae"
+        },
+        "ccdata/SCM72EA.INI": {
+          "sha256": "d8555926ea6564f6ab699c4c7dea85c476cdf01d0397dc8fc9c80246fedf1dd8",
+          "source": "assets/objects/d8555926ea6564f6ab699c4c7dea85c476cdf01d0397dc8fc9c80246fedf1dd8"
+        },
+        "ccdata/SCM73EA.INI": {
+          "sha256": "1c90f6b3f53d35ee32fa2175e20c0bfad51e225d85be08c1ad2f0c6bbbc5016a",
+          "source": "assets/objects/1c90f6b3f53d35ee32fa2175e20c0bfad51e225d85be08c1ad2f0c6bbbc5016a"
+        },
+        "ccdata/SCM74EA.INI": {
+          "sha256": "6a8046f07e1f2c2c7af67064b4d794e1f6c9fd28edf83e74103d02803fed9d2f",
+          "source": "assets/objects/6a8046f07e1f2c2c7af67064b4d794e1f6c9fd28edf83e74103d02803fed9d2f"
+        },
+        "ccdata/SCM75EA.INI": {
+          "sha256": "5be8cce32f49fb96f74f3fe56133fd1af6501f075af122efa84dfd25df8bab73",
+          "source": "assets/objects/5be8cce32f49fb96f74f3fe56133fd1af6501f075af122efa84dfd25df8bab73"
+        },
+        "ccdata/SCM77EA.INI": {
+          "sha256": "4cf9ce0d276d3725e0b8cc1ca15c12a63a51f93270af2b0aa631496b90592aec",
+          "source": "assets/objects/4cf9ce0d276d3725e0b8cc1ca15c12a63a51f93270af2b0aa631496b90592aec"
+        },
+        "ccdata/SCM90EA.INI": {
+          "sha256": "ff58beed8de3129b19e0e818b77de8e1c16e2bd224b4a1bb359fe2a7cf4e1883",
+          "source": "assets/objects/ff58beed8de3129b19e0e818b77de8e1c16e2bd224b4a1bb359fe2a7cf4e1883"
+        },
+        "ccdata/SCM96EA.INI": {
+          "sha256": "ae8cd985bdb1a7975b4b30618f183ede255c7725db54e62cb642bc9dceca17a5",
+          "source": "assets/objects/ae8cd985bdb1a7975b4b30618f183ede255c7725db54e62cb642bc9dceca17a5"
+        },
+        "ccdata/SCM97EA.INI": {
+          "sha256": "e53f9bb41f2c0ce5636544b68f0e5aadfff84f76e31a7b3b96d601a237e584b7",
+          "source": "assets/objects/e53f9bb41f2c0ce5636544b68f0e5aadfff84f76e31a7b3b96d601a237e584b7"
+        },
+        "ccdata/SCM98EA.INI": {
+          "sha256": "200674ee04c8a17f498c84e003d4d7b2879c6d3a23510bfc43298e85ff21285b",
+          "source": "assets/objects/200674ee04c8a17f498c84e003d4d7b2879c6d3a23510bfc43298e85ff21285b"
+        },
+        "ccdata/SCMCAEA.BIN": {
+          "sha256": "0472092adac2638a05a6d6612913f0a69a498eea631a092a8679f8836e51fed9",
+          "source": "assets/objects/0472092adac2638a05a6d6612913f0a69a498eea631a092a8679f8836e51fed9"
+        },
+        "ccdata/SCMCAEA.INI": {
+          "sha256": "4de8c61fa9d2f316a7c2836efede5333686ca23fd62fd8c5cbcc6abed78ab801",
+          "source": "assets/objects/4de8c61fa9d2f316a7c2836efede5333686ca23fd62fd8c5cbcc6abed78ab801"
+        },
+        "ccdata/SCMCAEA_RADAR_SMALL.TGA": {
+          "sha256": "c326d01f8997952b504868980ca77567db8f647dc88b1442167f5cb5b7027763",
+          "source": "assets/objects/c326d01f8997952b504868980ca77567db8f647dc88b1442167f5cb5b7027763"
+        },
+        "ccdata/SCMCBEA.BIN": {
+          "sha256": "c8e6902af4603a79195e38937ff3628846dc00f8e1a60202135aa9544d72aed8",
+          "source": "assets/objects/c8e6902af4603a79195e38937ff3628846dc00f8e1a60202135aa9544d72aed8"
+        },
+        "ccdata/SCMCBEA.INI": {
+          "sha256": "5bf1501dd33fd7f7037104d09e387fefc345162407e998b039bdcb52c5cb21ed",
+          "source": "assets/objects/5bf1501dd33fd7f7037104d09e387fefc345162407e998b039bdcb52c5cb21ed"
+        },
+        "ccdata/SCMCBEA_RADAR_SMALL.TGA": {
+          "sha256": "af60e6d7f0098dbb71b219eeb8eeedb4f197467905259c2a7ec0153f22037bf3",
+          "source": "assets/objects/af60e6d7f0098dbb71b219eeb8eeedb4f197467905259c2a7ec0153f22037bf3"
+        },
+        "ccmod.json": {
+          "sha256": "a3f5fbf003599cfc1831afcf50510d01942ff280dc294a22208e60d2c1e2a4e6",
+          "source": "assets/objects/a3f5fbf003599cfc1831afcf50510d01942ff280dc294a22208e60d2c1e2a4e6"
+        },
         "Data/Art/Textures/sRGB/BuildIcon_TD_BAEVIL.tga": {
           "sha256": "55be11740899887f45696f5412ca270b1c100c9b566251c9e324544202e96056",
           "source": "assets/objects/55be11740899887f45696f5412ca270b1c100c9b566251c9e324544202e96056"
@@ -5133,8 +5737,8 @@
           "source": "assets/objects/9d0bbe6f3d69b70fb94d84c5b1d8c68c2fca296ba5066f85bea0da9bb9fdfe47"
         },
         "Data/TiberianDawn.dll": {
-          "sha256": "c9902d6c23cd38bc10c33b8b92e94970db78852f53b8fc677847f41f625652ee",
-          "source": "assets/objects/c9902d6c23cd38bc10c33b8b92e94970db78852f53b8fc677847f41f625652ee"
+          "sha256": "f3d6f91355f3b149e8a3c051740f9cf9e4e164a0942efe4379b971c1fabc37fd",
+          "source": "assets/objects/f3d6f91355f3b149e8a3c051740f9cf9e4e164a0942efe4379b971c1fabc37fd"
         },
         "Data/XML/Audio/Audio_System_Constants.xml": {
           "sha256": "c112ea080050db37a05d57119d65a8d4f01eac076439832d2e1ec6dbd5eba847",
@@ -5186,7 +5790,7 @@
         },
         "LICENSE-EA-GPLv3.md": {
           "sha256": "ea983887086313047456607084c1323f92f6f809a53b939f659f5ce191b7d82f",
-          "source": "LICENSE-EA-GPLv3.md"
+          "source": "assets/objects/ea983887086313047456607084c1323f92f6f809a53b939f659f5ce191b7d82f"
         },
         "ModText.csv": {
           "sha256": "9d0bbe6f3d69b70fb94d84c5b1d8c68c2fca296ba5066f85bea0da9bb9fdfe47",
@@ -5197,584 +5801,17 @@
           "source": "assets/objects/0450c469de82235f8879d4488ea7611ac4989e26800927c526938d208daba3c3"
         },
         "Source/CrystAlienConflict-DLL-source.zip": {
-          "sha256": "5029d27896599da432352de5df27981d13191d0487c431f5b7942953c2498662",
+          "sha256": "035b8dc621f28af3d42fd22ca04dbb9c181b9a16043af8a9903e3280530c7d4f",
           "source": "@source-archive"
-        },
-        "ccdata/CONSOLE_1/SCB60EA.INI": {
-          "sha256": "88361553a1d5253394a041e21c3c6987fb20344b504133dd3e84d132f1cad866",
-          "source": "assets/objects/88361553a1d5253394a041e21c3c6987fb20344b504133dd3e84d132f1cad866"
-        },
-        "ccdata/CONSOLE_1/SCB61EA.INI": {
-          "sha256": "766d734baa8fe5f03eee2f032147f5cb83ebf7056f4759185d4ceb3da0bd2a42",
-          "source": "assets/objects/766d734baa8fe5f03eee2f032147f5cb83ebf7056f4759185d4ceb3da0bd2a42"
-        },
-        "ccdata/CONSOLE_1/SCG60EA.INI": {
-          "sha256": "91a18eaf30c9ca4f80eb66d2b566d4f7695493c734e74efc56e812355ac15438",
-          "source": "assets/objects/91a18eaf30c9ca4f80eb66d2b566d4f7695493c734e74efc56e812355ac15438"
-        },
-        "ccdata/CONSOLE_1/SCG61EA.INI": {
-          "sha256": "252c64518650ccaacacf3b6dc7e04392d60b994e0b8b8ecba8dd839d3254a8fb",
-          "source": "assets/objects/252c64518650ccaacacf3b6dc7e04392d60b994e0b8b8ecba8dd839d3254a8fb"
-        },
-        "ccdata/CONSOLE_1/SCG62EA.INI": {
-          "sha256": "9b9c334a19ce20ad2d4887ea32668a4c9f8a16b686dc9f0fcae0c47e7ba4ae65",
-          "source": "assets/objects/9b9c334a19ce20ad2d4887ea32668a4c9f8a16b686dc9f0fcae0c47e7ba4ae65"
-        },
-        "ccdata/CONSOLE_1/SCG72EA.INI": {
-          "sha256": "ca5561ab321681f9d628650ab7851085efe1768f510c77c03e587871e939483d",
-          "source": "assets/objects/ca5561ab321681f9d628650ab7851085efe1768f510c77c03e587871e939483d"
-        },
-        "ccdata/CONSOLE_2/SCB21EA.INI": {
-          "sha256": "c51e7a243107dadb5623069cae8ba4232abda34c00ae0fadf988982e4761c75d",
-          "source": "assets/objects/c51e7a243107dadb5623069cae8ba4232abda34c00ae0fadf988982e4761c75d"
-        },
-        "ccdata/CONSOLE_2/SCB22EA.INI": {
-          "sha256": "ff666e2afeb79bee8eab9ff55172fb9c31c8eb7bfd80f8f1c5bf9ea9d19375b7",
-          "source": "assets/objects/ff666e2afeb79bee8eab9ff55172fb9c31c8eb7bfd80f8f1c5bf9ea9d19375b7"
-        },
-        "ccdata/CONSOLE_2/SCG30EA.INI": {
-          "sha256": "c4b06e60411e1c6b6f44d0f4bfd9fd40d186b2fafc5509d8c0061cddb0f5592b",
-          "source": "assets/objects/c4b06e60411e1c6b6f44d0f4bfd9fd40d186b2fafc5509d8c0061cddb0f5592b"
-        },
-        "ccdata/CONSOLE_2/SCG90EA.INI": {
-          "sha256": "99ed43ab7d0f8c934b661de8af799f1b8c08603cf32c62451ea7d61f2db6d118",
-          "source": "assets/objects/99ed43ab7d0f8c934b661de8af799f1b8c08603cf32c62451ea7d61f2db6d118"
-        },
-        "ccdata/SCB01EA.INI": {
-          "sha256": "881addadce49ca9cfef70f164e1010587cbc12df5cae9669eacc5e6bbabaf8c8",
-          "source": "assets/objects/881addadce49ca9cfef70f164e1010587cbc12df5cae9669eacc5e6bbabaf8c8"
-        },
-        "ccdata/SCB02EA.INI": {
-          "sha256": "09548d13c741a807bcd443693375a1dca3ca757690b3e187c8ca3c19d987856f",
-          "source": "assets/objects/09548d13c741a807bcd443693375a1dca3ca757690b3e187c8ca3c19d987856f"
-        },
-        "ccdata/SCB02EB.INI": {
-          "sha256": "974e740359e9b0e11720c177e6cfd75e1f781eb5c5ffaf7606e6c48243810217",
-          "source": "assets/objects/974e740359e9b0e11720c177e6cfd75e1f781eb5c5ffaf7606e6c48243810217"
-        },
-        "ccdata/SCB03EA.INI": {
-          "sha256": "ce5492d14068ef9eeb2ab08a20051a90c5d00fede0dd75ddb1da0a7021dc9120",
-          "source": "assets/objects/ce5492d14068ef9eeb2ab08a20051a90c5d00fede0dd75ddb1da0a7021dc9120"
-        },
-        "ccdata/SCB03EB.INI": {
-          "sha256": "cabf2487081137fd1879ef5c11448011f69e888bc0c29ef46ae93c62bc5d588c",
-          "source": "assets/objects/cabf2487081137fd1879ef5c11448011f69e888bc0c29ef46ae93c62bc5d588c"
-        },
-        "ccdata/SCB04EA.INI": {
-          "sha256": "df9dcfed7afce26dbb62a2199ef39b2eac74369bb6d179ddb10eb9506157e20d",
-          "source": "assets/objects/df9dcfed7afce26dbb62a2199ef39b2eac74369bb6d179ddb10eb9506157e20d"
-        },
-        "ccdata/SCB04EB.INI": {
-          "sha256": "e5d96b424d32a7f5dc08555d8dc4ef9d0a8a56efdc81bf60176dbc6d4579452e",
-          "source": "assets/objects/e5d96b424d32a7f5dc08555d8dc4ef9d0a8a56efdc81bf60176dbc6d4579452e"
-        },
-        "ccdata/SCB05EA.INI": {
-          "sha256": "7a6ac9e3f2e3cc15967f136027cd4030a62e5df106c1cc558e5410373c4ad73d",
-          "source": "assets/objects/7a6ac9e3f2e3cc15967f136027cd4030a62e5df106c1cc558e5410373c4ad73d"
-        },
-        "ccdata/SCB06EA.INI": {
-          "sha256": "118ea862e33f3b6379b861aa2964e618b8d8cd6e689b9988d9ce73e9060d18e9",
-          "source": "assets/objects/118ea862e33f3b6379b861aa2964e618b8d8cd6e689b9988d9ce73e9060d18e9"
-        },
-        "ccdata/SCB06EB.INI": {
-          "sha256": "10796fdcf34d781be9f06154e6ca2a9eb6b4bef7e41377afef93b1d70d4b980b",
-          "source": "assets/objects/10796fdcf34d781be9f06154e6ca2a9eb6b4bef7e41377afef93b1d70d4b980b"
-        },
-        "ccdata/SCB06EC.INI": {
-          "sha256": "22c1587fc8dbd38ae103261b40c99f84adfd2ea88207ef1711d0be8e39c01617",
-          "source": "assets/objects/22c1587fc8dbd38ae103261b40c99f84adfd2ea88207ef1711d0be8e39c01617"
-        },
-        "ccdata/SCB07EA.INI": {
-          "sha256": "77214cdeb22a16f8e410400c5717e5fd718faef7d7aef8568f33e94233c11d47",
-          "source": "assets/objects/77214cdeb22a16f8e410400c5717e5fd718faef7d7aef8568f33e94233c11d47"
-        },
-        "ccdata/SCB07EB.INI": {
-          "sha256": "d7fa0dad9507d65267a6b136dbda530f39d106e6c2accddd3e12e30614ce4828",
-          "source": "assets/objects/d7fa0dad9507d65267a6b136dbda530f39d106e6c2accddd3e12e30614ce4828"
-        },
-        "ccdata/SCB07EC.INI": {
-          "sha256": "336015775033cbe08c03c1873b53f91c48f7d05f0a0686c0ed1525f4aca6bdf1",
-          "source": "assets/objects/336015775033cbe08c03c1873b53f91c48f7d05f0a0686c0ed1525f4aca6bdf1"
-        },
-        "ccdata/SCB08EA.INI": {
-          "sha256": "e377be19896c7b242dadd69930a5455f60dac61f428596793665afd4a12a0336",
-          "source": "assets/objects/e377be19896c7b242dadd69930a5455f60dac61f428596793665afd4a12a0336"
-        },
-        "ccdata/SCB08EB.INI": {
-          "sha256": "2b3140ab8b449d472efb4e79b856e78fb4804968f95928d2496c800d24330f96",
-          "source": "assets/objects/2b3140ab8b449d472efb4e79b856e78fb4804968f95928d2496c800d24330f96"
-        },
-        "ccdata/SCB09EA.INI": {
-          "sha256": "db38a44807cf7b52c14649c2320d3eceff240c6801923a1adb7f739b97d21b57",
-          "source": "assets/objects/db38a44807cf7b52c14649c2320d3eceff240c6801923a1adb7f739b97d21b57"
-        },
-        "ccdata/SCB10EA.INI": {
-          "sha256": "7aebeb0bcd615c86e871433a956cb30cd8455b14082e809c26694200719f6b91",
-          "source": "assets/objects/7aebeb0bcd615c86e871433a956cb30cd8455b14082e809c26694200719f6b91"
-        },
-        "ccdata/SCB10EB.INI": {
-          "sha256": "f75d208078335fbfbe0dca4db82dbc60602841cbb65c7739a5a7c2ed3d81bb15",
-          "source": "assets/objects/f75d208078335fbfbe0dca4db82dbc60602841cbb65c7739a5a7c2ed3d81bb15"
-        },
-        "ccdata/SCB11EA.INI": {
-          "sha256": "98769e1d08b055a922450dcf86566568818933f9a8d592a04da980af5bb5ba6b",
-          "source": "assets/objects/98769e1d08b055a922450dcf86566568818933f9a8d592a04da980af5bb5ba6b"
-        },
-        "ccdata/SCB11EB.INI": {
-          "sha256": "b23dcc82ef3b473fb68711d9c7a196650b5fd251b0c867b92dae24991747cf5b",
-          "source": "assets/objects/b23dcc82ef3b473fb68711d9c7a196650b5fd251b0c867b92dae24991747cf5b"
-        },
-        "ccdata/SCB12EA.INI": {
-          "sha256": "263cdda7e06476ae3fa436a72f18454944d99deb356cc72a82053c4ee34a4f76",
-          "source": "assets/objects/263cdda7e06476ae3fa436a72f18454944d99deb356cc72a82053c4ee34a4f76"
-        },
-        "ccdata/SCB13EA.INI": {
-          "sha256": "c6265c470fb060d37dade8389f13ee4641e69a050277386bcc9db88b80808e91",
-          "source": "assets/objects/c6265c470fb060d37dade8389f13ee4641e69a050277386bcc9db88b80808e91"
-        },
-        "ccdata/SCB13EB.INI": {
-          "sha256": "afe6bce64ee3c19a6b96b1cd9a66c81f9bf29a7b481e188fa9d633739c32d14d",
-          "source": "assets/objects/afe6bce64ee3c19a6b96b1cd9a66c81f9bf29a7b481e188fa9d633739c32d14d"
-        },
-        "ccdata/SCB13EC.INI": {
-          "sha256": "f4b6eea34bf679f24f3a809c3ce5603925f01846b89c7d461234e434d09ff739",
-          "source": "assets/objects/f4b6eea34bf679f24f3a809c3ce5603925f01846b89c7d461234e434d09ff739"
-        },
-        "ccdata/SCB20EA.INI": {
-          "sha256": "790420a72fea3e25e0f32a37173711af44cdef432eb9831ea0c8c90cf7168504",
-          "source": "assets/objects/790420a72fea3e25e0f32a37173711af44cdef432eb9831ea0c8c90cf7168504"
-        },
-        "ccdata/SCB21EA.INI": {
-          "sha256": "43cb37c9bbb07a5e805dfefb1ad8acdc626c297d07e46c73f355fe20953a618b",
-          "source": "assets/objects/43cb37c9bbb07a5e805dfefb1ad8acdc626c297d07e46c73f355fe20953a618b"
-        },
-        "ccdata/SCB30EA.INI": {
-          "sha256": "c475493e4ba4261408e9a3ba192ba9560d5541e04637aa35f802706c02972ed9",
-          "source": "assets/objects/c475493e4ba4261408e9a3ba192ba9560d5541e04637aa35f802706c02972ed9"
-        },
-        "ccdata/SCB31EA.INI": {
-          "sha256": "032e119fe26efd80ef40a9ba70199b900983992fb6af131974834353c6deec0c",
-          "source": "assets/objects/032e119fe26efd80ef40a9ba70199b900983992fb6af131974834353c6deec0c"
-        },
-        "ccdata/SCB32EA.INI": {
-          "sha256": "f4b54a14949fee477464bf62505cfb2c6b5bd82adf5ff84d571c4b296c92f946",
-          "source": "assets/objects/f4b54a14949fee477464bf62505cfb2c6b5bd82adf5ff84d571c4b296c92f946"
-        },
-        "ccdata/SCB33EA.INI": {
-          "sha256": "8a2924b3a835b82e8d7e4da94994e6aeb46554f9f0246d55dd94dd8f4d3f7766",
-          "source": "assets/objects/8a2924b3a835b82e8d7e4da94994e6aeb46554f9f0246d55dd94dd8f4d3f7766"
-        },
-        "ccdata/SCB35EA.INI": {
-          "sha256": "b521c1852fc34b37b7d2d50b7acc8531433887a4bcdad41c5a2ea071dcfc6de3",
-          "source": "assets/objects/b521c1852fc34b37b7d2d50b7acc8531433887a4bcdad41c5a2ea071dcfc6de3"
-        },
-        "ccdata/SCB37EA.INI": {
-          "sha256": "33c9a22c2d0b7dfdce9d2abe7dbc259daf231401dfb78ef0c4f309b08926b231",
-          "source": "assets/objects/33c9a22c2d0b7dfdce9d2abe7dbc259daf231401dfb78ef0c4f309b08926b231"
-        },
-        "ccdata/SCC06EA.INI": {
-          "sha256": "22c1587fc8dbd38ae103261b40c99f84adfd2ea88207ef1711d0be8e39c01617",
-          "source": "assets/objects/22c1587fc8dbd38ae103261b40c99f84adfd2ea88207ef1711d0be8e39c01617"
-        },
-        "ccdata/SCC07EA.INI": {
-          "sha256": "336015775033cbe08c03c1873b53f91c48f7d05f0a0686c0ed1525f4aca6bdf1",
-          "source": "assets/objects/336015775033cbe08c03c1873b53f91c48f7d05f0a0686c0ed1525f4aca6bdf1"
-        },
-        "ccdata/SCC13EA.INI": {
-          "sha256": "f4b6eea34bf679f24f3a809c3ce5603925f01846b89c7d461234e434d09ff739",
-          "source": "assets/objects/f4b6eea34bf679f24f3a809c3ce5603925f01846b89c7d461234e434d09ff739"
-        },
+        }
+      },
+      "workshop_id": "3825896336"
+    },
+    "CrystAlienConflictPlus": {
+      "files": {
         "ccdata/SCCAC.MIX": {
           "sha256": "78dcd221b75d06212badf7405290309de571f18c47ad07322dbe47d1314a3b0f",
           "source": "assets/objects/78dcd221b75d06212badf7405290309de571f18c47ad07322dbe47d1314a3b0f"
-        },
-        "ccdata/SCG01EA.INI": {
-          "sha256": "327db1b0dae01f58f230e85b4f9ff95a921b777866591b137f671531f8491b20",
-          "source": "assets/objects/327db1b0dae01f58f230e85b4f9ff95a921b777866591b137f671531f8491b20"
-        },
-        "ccdata/SCG01EG.INI": {
-          "sha256": "18b1bedd56c6c92f11bb8f7d82e1504cd4ed0bf9cae21e4eb155622615886666",
-          "source": "assets/objects/18b1bedd56c6c92f11bb8f7d82e1504cd4ed0bf9cae21e4eb155622615886666"
-        },
-        "ccdata/SCG02EA.INI": {
-          "sha256": "dfdb8da7a9b1c10d61da0b36d7ec04025ee9ef0a8fb8123988a3a5a9610ec8da",
-          "source": "assets/objects/dfdb8da7a9b1c10d61da0b36d7ec04025ee9ef0a8fb8123988a3a5a9610ec8da"
-        },
-        "ccdata/SCG02EG.INI": {
-          "sha256": "f0a9235c73165fb6a385779bc3a0ca3c062e029024244af67e1c1293d34cb22c",
-          "source": "assets/objects/f0a9235c73165fb6a385779bc3a0ca3c062e029024244af67e1c1293d34cb22c"
-        },
-        "ccdata/SCG03EA.INI": {
-          "sha256": "38e63c5c446e50f720c87588a498cf228a8bfaaaa3cbc914abbd3b1146e68bf7",
-          "source": "assets/objects/38e63c5c446e50f720c87588a498cf228a8bfaaaa3cbc914abbd3b1146e68bf7"
-        },
-        "ccdata/SCG03EG.INI": {
-          "sha256": "5f88fa7986a8ecdf57d3e617ba884ed85bed028bb569fff4ac81493dc17d4873",
-          "source": "assets/objects/5f88fa7986a8ecdf57d3e617ba884ed85bed028bb569fff4ac81493dc17d4873"
-        },
-        "ccdata/SCG04EA.INI": {
-          "sha256": "c559fb4064284242b5184131af937d402914d421a00daab7b392d95023689df7",
-          "source": "assets/objects/c559fb4064284242b5184131af937d402914d421a00daab7b392d95023689df7"
-        },
-        "ccdata/SCG04EG.INI": {
-          "sha256": "5e27696c98da21558321ce0cb9544d66849915bb659ae1b9445f266bf0760d7d",
-          "source": "assets/objects/5e27696c98da21558321ce0cb9544d66849915bb659ae1b9445f266bf0760d7d"
-        },
-        "ccdata/SCG04WA.INI": {
-          "sha256": "148f63f3978be0e64d0fb0ddbadcf9bde46cca3df317e4efc729d34934964925",
-          "source": "assets/objects/148f63f3978be0e64d0fb0ddbadcf9bde46cca3df317e4efc729d34934964925"
-        },
-        "ccdata/SCG04WB.INI": {
-          "sha256": "62aac48e3f5ad5b79b674303d32520255b9fb6cc711f83167e1aff7d98abe347",
-          "source": "assets/objects/62aac48e3f5ad5b79b674303d32520255b9fb6cc711f83167e1aff7d98abe347"
-        },
-        "ccdata/SCG05EA.INI": {
-          "sha256": "46e694b7cae4570924a625b0062f5c5b0114689f89f32a07710be2fa7af0486c",
-          "source": "assets/objects/46e694b7cae4570924a625b0062f5c5b0114689f89f32a07710be2fa7af0486c"
-        },
-        "ccdata/SCG05EB.INI": {
-          "sha256": "f287a4d4910fdb508feec4c21eda754a36172da5e8621722ae48003bb50083ca",
-          "source": "assets/objects/f287a4d4910fdb508feec4c21eda754a36172da5e8621722ae48003bb50083ca"
-        },
-        "ccdata/SCG05EG.INI": {
-          "sha256": "95d15c75c41d238da79955e7a235f896c45b9db21f8ef8d3cb8e3e40fcef2347",
-          "source": "assets/objects/95d15c75c41d238da79955e7a235f896c45b9db21f8ef8d3cb8e3e40fcef2347"
-        },
-        "ccdata/SCG05WA.INI": {
-          "sha256": "75e3d446c36bbdafc8ea38ebc40b975c7aad23cd76a8e51209de5d7c078b4c56",
-          "source": "assets/objects/75e3d446c36bbdafc8ea38ebc40b975c7aad23cd76a8e51209de5d7c078b4c56"
-        },
-        "ccdata/SCG05WB.INI": {
-          "sha256": "e0754d2298a8b77e557129a85bcac411c65ff64b9c22c8931ebd5c9c204b23e5",
-          "source": "assets/objects/e0754d2298a8b77e557129a85bcac411c65ff64b9c22c8931ebd5c9c204b23e5"
-        },
-        "ccdata/SCG06EA.INI": {
-          "sha256": "b0459f3e559f1ab8a223349e79f778657e865136b5321f86ee3c382493b134c5",
-          "source": "assets/objects/b0459f3e559f1ab8a223349e79f778657e865136b5321f86ee3c382493b134c5"
-        },
-        "ccdata/SCG07EA.INI": {
-          "sha256": "ecc8b1b07353704042b091064e6406c1cb49624178404191cf2e34a0bd561873",
-          "source": "assets/objects/ecc8b1b07353704042b091064e6406c1cb49624178404191cf2e34a0bd561873"
-        },
-        "ccdata/SCG08EA.INI": {
-          "sha256": "01a9e92125f5412252956c033eb2e65f07b4b25caa24dab195ab44977c09a979",
-          "source": "assets/objects/01a9e92125f5412252956c033eb2e65f07b4b25caa24dab195ab44977c09a979"
-        },
-        "ccdata/SCG08EB.INI": {
-          "sha256": "30b1693d960a8c0d4ae581125159e9741ffcee4bb800dc952a36ff1199aca7d3",
-          "source": "assets/objects/30b1693d960a8c0d4ae581125159e9741ffcee4bb800dc952a36ff1199aca7d3"
-        },
-        "ccdata/SCG09EA.INI": {
-          "sha256": "7f4e929bc4e9c40f002d176ba34d773b77d64043534817928971378f75ed9dc6",
-          "source": "assets/objects/7f4e929bc4e9c40f002d176ba34d773b77d64043534817928971378f75ed9dc6"
-        },
-        "ccdata/SCG10EA.INI": {
-          "sha256": "16445478a339720f9e3b7113defd61530a7370d9891bc63e2af92b87fdb178ac",
-          "source": "assets/objects/16445478a339720f9e3b7113defd61530a7370d9891bc63e2af92b87fdb178ac"
-        },
-        "ccdata/SCG10EB.INI": {
-          "sha256": "58a8895f696f023c8cf06aea26022059660f5dc8f4e187dff362771c1fb786cd",
-          "source": "assets/objects/58a8895f696f023c8cf06aea26022059660f5dc8f4e187dff362771c1fb786cd"
-        },
-        "ccdata/SCG11EA.INI": {
-          "sha256": "c6d37f87ed3f0cfa87b6d1d75b170c8a99fc1d2d704b47a2b39994238ca4c4cc",
-          "source": "assets/objects/c6d37f87ed3f0cfa87b6d1d75b170c8a99fc1d2d704b47a2b39994238ca4c4cc"
-        },
-        "ccdata/SCG12EA.INI": {
-          "sha256": "6e7826286414dc49293e75587e30e996fc59c41b8a1628ebdec0af6457dc52bf",
-          "source": "assets/objects/6e7826286414dc49293e75587e30e996fc59c41b8a1628ebdec0af6457dc52bf"
-        },
-        "ccdata/SCG12EB.INI": {
-          "sha256": "0c96aa4ff7dd55ae28e7cd3a4c0dde133f436729c3e80184d4ac9c92ebc7a0bf",
-          "source": "assets/objects/0c96aa4ff7dd55ae28e7cd3a4c0dde133f436729c3e80184d4ac9c92ebc7a0bf"
-        },
-        "ccdata/SCG13EA.INI": {
-          "sha256": "2c220c1f2d93811eb2359920c42583249b61c5d4865d7a5dda9da7ac8dded085",
-          "source": "assets/objects/2c220c1f2d93811eb2359920c42583249b61c5d4865d7a5dda9da7ac8dded085"
-        },
-        "ccdata/SCG13EB.INI": {
-          "sha256": "2c220c1f2d93811eb2359920c42583249b61c5d4865d7a5dda9da7ac8dded085",
-          "source": "assets/objects/2c220c1f2d93811eb2359920c42583249b61c5d4865d7a5dda9da7ac8dded085"
-        },
-        "ccdata/SCG14EA.INI": {
-          "sha256": "f748bd73dae6d4e5f9b347e12ffd7ca1471df19734f55a0d7765e3ebc83ddb6a",
-          "source": "assets/objects/f748bd73dae6d4e5f9b347e12ffd7ca1471df19734f55a0d7765e3ebc83ddb6a"
-        },
-        "ccdata/SCG15EA.INI": {
-          "sha256": "4fb0b086faa6be86a696f60bee62036eb3e2e05f1836ba510abe8867dadb4a69",
-          "source": "assets/objects/4fb0b086faa6be86a696f60bee62036eb3e2e05f1836ba510abe8867dadb4a69"
-        },
-        "ccdata/SCG15EB.INI": {
-          "sha256": "7eeba8c6d827e8a93ad2ecf3b243c6c2fb50be658753f1196ed789c8981c4526",
-          "source": "assets/objects/7eeba8c6d827e8a93ad2ecf3b243c6c2fb50be658753f1196ed789c8981c4526"
-        },
-        "ccdata/SCG15EC.INI": {
-          "sha256": "9870e5380381af98d5b9a8cf6fef862a9479ea238d8ae21062dd89cf365c1cc5",
-          "source": "assets/objects/9870e5380381af98d5b9a8cf6fef862a9479ea238d8ae21062dd89cf365c1cc5"
-        },
-        "ccdata/SCG22EA.INI": {
-          "sha256": "1628fcd43259fa12618d125fac928f9dc81ac11a6595b63929e02de2e4952a0a",
-          "source": "assets/objects/1628fcd43259fa12618d125fac928f9dc81ac11a6595b63929e02de2e4952a0a"
-        },
-        "ccdata/SCG23EA.INI": {
-          "sha256": "1578e845a98d6969bdb96de5d32185de5e43f9b0ef791dc57b4a8e63f347765c",
-          "source": "assets/objects/1578e845a98d6969bdb96de5d32185de5e43f9b0ef791dc57b4a8e63f347765c"
-        },
-        "ccdata/SCG36EA.INI": {
-          "sha256": "07dfc06623596b022c4eb2abefb802babca8800ea857e5506646f44dabbf664e",
-          "source": "assets/objects/07dfc06623596b022c4eb2abefb802babca8800ea857e5506646f44dabbf664e"
-        },
-        "ccdata/SCG38EA.INI": {
-          "sha256": "01f697bf474afe418790683033130b4ed77ff6b2ad360e9753835d521991ff9c",
-          "source": "assets/objects/01f697bf474afe418790683033130b4ed77ff6b2ad360e9753835d521991ff9c"
-        },
-        "ccdata/SCG40EA.INI": {
-          "sha256": "176865d6985708ea3d174c853e41d0982a2674f5971d83ed761bd5d7091c6d8d",
-          "source": "assets/objects/176865d6985708ea3d174c853e41d0982a2674f5971d83ed761bd5d7091c6d8d"
-        },
-        "ccdata/SCG41EA.INI": {
-          "sha256": "5194496025c23482a44fcdeb22360dcd4628ca07f3ee123ec3cfe6d0ec38a07b",
-          "source": "assets/objects/5194496025c23482a44fcdeb22360dcd4628ca07f3ee123ec3cfe6d0ec38a07b"
-        },
-        "ccdata/SCG50EA.INI": {
-          "sha256": "e16aa2b561cb87207e96b8c3f5b644ccf73e25e7e48b3229a676233a9af16bc2",
-          "source": "assets/objects/e16aa2b561cb87207e96b8c3f5b644ccf73e25e7e48b3229a676233a9af16bc2"
-        },
-        "ccdata/SCJ01EA.INI": {
-          "sha256": "18b1bedd56c6c92f11bb8f7d82e1504cd4ed0bf9cae21e4eb155622615886666",
-          "source": "assets/objects/18b1bedd56c6c92f11bb8f7d82e1504cd4ed0bf9cae21e4eb155622615886666"
-        },
-        "ccdata/SCJ01EG.INI": {
-          "sha256": "b5c1a559dd4cc66e34d09ec4b9340b7d2fd191a50e8915b4cc2f10cebc31bef1",
-          "source": "assets/objects/b5c1a559dd4cc66e34d09ec4b9340b7d2fd191a50e8915b4cc2f10cebc31bef1"
-        },
-        "ccdata/SCJ02EA.INI": {
-          "sha256": "f0a9235c73165fb6a385779bc3a0ca3c062e029024244af67e1c1293d34cb22c",
-          "source": "assets/objects/f0a9235c73165fb6a385779bc3a0ca3c062e029024244af67e1c1293d34cb22c"
-        },
-        "ccdata/SCJ02EG.INI": {
-          "sha256": "d9f2916f5f00ad048cf8c53853d3458d4b514f322aa7743ac5e84e6b6efc4081",
-          "source": "assets/objects/d9f2916f5f00ad048cf8c53853d3458d4b514f322aa7743ac5e84e6b6efc4081"
-        },
-        "ccdata/SCJ03EA.INI": {
-          "sha256": "5f88fa7986a8ecdf57d3e617ba884ed85bed028bb569fff4ac81493dc17d4873",
-          "source": "assets/objects/5f88fa7986a8ecdf57d3e617ba884ed85bed028bb569fff4ac81493dc17d4873"
-        },
-        "ccdata/SCJ03EG.INI": {
-          "sha256": "cfb1d5fc6ee8f579d9059cbf95f9a37b56492ec7a42b25b94e038c3ec1093192",
-          "source": "assets/objects/cfb1d5fc6ee8f579d9059cbf95f9a37b56492ec7a42b25b94e038c3ec1093192"
-        },
-        "ccdata/SCJ04EA.INI": {
-          "sha256": "5e27696c98da21558321ce0cb9544d66849915bb659ae1b9445f266bf0760d7d",
-          "source": "assets/objects/5e27696c98da21558321ce0cb9544d66849915bb659ae1b9445f266bf0760d7d"
-        },
-        "ccdata/SCJ04EG.INI": {
-          "sha256": "3b88b90b7155faabe057620256683c98a8df409c74a0d0e73c8e8973eec36a58",
-          "source": "assets/objects/3b88b90b7155faabe057620256683c98a8df409c74a0d0e73c8e8973eec36a58"
-        },
-        "ccdata/SCJ05EA.INI": {
-          "sha256": "95d15c75c41d238da79955e7a235f896c45b9db21f8ef8d3cb8e3e40fcef2347",
-          "source": "assets/objects/95d15c75c41d238da79955e7a235f896c45b9db21f8ef8d3cb8e3e40fcef2347"
-        },
-        "ccdata/SCJ05EG.INI": {
-          "sha256": "b621dcc05fb29ab43c0f0129ee3d02db0893266b814ae2342be8669109d60ba9",
-          "source": "assets/objects/b621dcc05fb29ab43c0f0129ee3d02db0893266b814ae2342be8669109d60ba9"
-        },
-        "ccdata/SCJ06EG.INI": {
-          "sha256": "678a175b6b1c9dafb3890bbe2cc3aad5715554849b30f837e534caa3753ed4a9",
-          "source": "assets/objects/678a175b6b1c9dafb3890bbe2cc3aad5715554849b30f837e534caa3753ed4a9"
-        },
-        "ccdata/SCJ07EG.INI": {
-          "sha256": "ff30afa3a13a8eb5411fa430b109e89c30cfbee8b63da00699060e713a8cebcd",
-          "source": "assets/objects/ff30afa3a13a8eb5411fa430b109e89c30cfbee8b63da00699060e713a8cebcd"
-        },
-        "ccdata/SCJ08EG.INI": {
-          "sha256": "4f1f28eef8852a0bf5505b3435e19e0926abc5c59f54c6ca672c6f845f93dbd9",
-          "source": "assets/objects/4f1f28eef8852a0bf5505b3435e19e0926abc5c59f54c6ca672c6f845f93dbd9"
-        },
-        "ccdata/SCJ09EG.INI": {
-          "sha256": "ab540b57cc1898abf2399ac13400ad83b314c5aa4293bc31990a46b47bd154ed",
-          "source": "assets/objects/ab540b57cc1898abf2399ac13400ad83b314c5aa4293bc31990a46b47bd154ed"
-        },
-        "ccdata/SCJ10EG.INI": {
-          "sha256": "5353e4c33513895b72f632ff438167f4c50f583720a18db4004cc8f4fe87c613",
-          "source": "assets/objects/5353e4c33513895b72f632ff438167f4c50f583720a18db4004cc8f4fe87c613"
-        },
-        "ccdata/SCJ50EG.INI": {
-          "sha256": "5555f5d59c9e7f14ff7fa5802861fce211e11ff7bed2c0cc72fc922a0bc1cf9d",
-          "source": "assets/objects/5555f5d59c9e7f14ff7fa5802861fce211e11ff7bed2c0cc72fc922a0bc1cf9d"
-        },
-        "ccdata/SCJ51EG.INI": {
-          "sha256": "347dfe6961b9a7a681ed17849adb1eae2dd2a7ffe46bdc02e7a72c7445f6638c",
-          "source": "assets/objects/347dfe6961b9a7a681ed17849adb1eae2dd2a7ffe46bdc02e7a72c7445f6638c"
-        },
-        "ccdata/SCJ52EG.INI": {
-          "sha256": "efd91104d3eb777ae43c20c15167db2f3a5ef88dc2ae2b77c1b6d3d33bdc499c",
-          "source": "assets/objects/efd91104d3eb777ae43c20c15167db2f3a5ef88dc2ae2b77c1b6d3d33bdc499c"
-        },
-        "ccdata/SCJ60EG.INI": {
-          "sha256": "9f6ad42e4fe27e3f926860776edd543832ced22c6d33ff714f3481b379cd7060",
-          "source": "assets/objects/9f6ad42e4fe27e3f926860776edd543832ced22c6d33ff714f3481b379cd7060"
-        },
-        "ccdata/SCJ61EG.INI": {
-          "sha256": "4bd2938a68545ebc3595c740572119224faa5c8c3cf1191716e8cb6afe53304e",
-          "source": "assets/objects/4bd2938a68545ebc3595c740572119224faa5c8c3cf1191716e8cb6afe53304e"
-        },
-        "ccdata/SCJ62EG.INI": {
-          "sha256": "328f685897e8ce33c119a8f7806acafa1f50efdde4842499d68e3ec7587414a1",
-          "source": "assets/objects/328f685897e8ce33c119a8f7806acafa1f50efdde4842499d68e3ec7587414a1"
-        },
-        "ccdata/SCJ70EG.INI": {
-          "sha256": "3d2e0f18b49a9d469a77ee5fc6b9cf201e21a1813bc3b668cb0e33c406f6cecf",
-          "source": "assets/objects/3d2e0f18b49a9d469a77ee5fc6b9cf201e21a1813bc3b668cb0e33c406f6cecf"
-        },
-        "ccdata/SCJ71EG.INI": {
-          "sha256": "66ead1c1aa17510b9cea7d29a3a14cb3caa2c48115b0211669f205b1610357ae",
-          "source": "assets/objects/66ead1c1aa17510b9cea7d29a3a14cb3caa2c48115b0211669f205b1610357ae"
-        },
-        "ccdata/SCJ72EG.INI": {
-          "sha256": "d8555926ea6564f6ab699c4c7dea85c476cdf01d0397dc8fc9c80246fedf1dd8",
-          "source": "assets/objects/d8555926ea6564f6ab699c4c7dea85c476cdf01d0397dc8fc9c80246fedf1dd8"
-        },
-        "ccdata/SCJ73EG.INI": {
-          "sha256": "1c90f6b3f53d35ee32fa2175e20c0bfad51e225d85be08c1ad2f0c6bbbc5016a",
-          "source": "assets/objects/1c90f6b3f53d35ee32fa2175e20c0bfad51e225d85be08c1ad2f0c6bbbc5016a"
-        },
-        "ccdata/SCJ74EG.INI": {
-          "sha256": "6a8046f07e1f2c2c7af67064b4d794e1f6c9fd28edf83e74103d02803fed9d2f",
-          "source": "assets/objects/6a8046f07e1f2c2c7af67064b4d794e1f6c9fd28edf83e74103d02803fed9d2f"
-        },
-        "ccdata/SCJ75EG.INI": {
-          "sha256": "5be8cce32f49fb96f74f3fe56133fd1af6501f075af122efa84dfd25df8bab73",
-          "source": "assets/objects/5be8cce32f49fb96f74f3fe56133fd1af6501f075af122efa84dfd25df8bab73"
-        },
-        "ccdata/SCJ77EG.INI": {
-          "sha256": "4cf9ce0d276d3725e0b8cc1ca15c12a63a51f93270af2b0aa631496b90592aec",
-          "source": "assets/objects/4cf9ce0d276d3725e0b8cc1ca15c12a63a51f93270af2b0aa631496b90592aec"
-        },
-        "ccdata/SCJ90EG.INI": {
-          "sha256": "ff58beed8de3129b19e0e818b77de8e1c16e2bd224b4a1bb359fe2a7cf4e1883",
-          "source": "assets/objects/ff58beed8de3129b19e0e818b77de8e1c16e2bd224b4a1bb359fe2a7cf4e1883"
-        },
-        "ccdata/SCJ96EG.INI": {
-          "sha256": "ae8cd985bdb1a7975b4b30618f183ede255c7725db54e62cb642bc9dceca17a5",
-          "source": "assets/objects/ae8cd985bdb1a7975b4b30618f183ede255c7725db54e62cb642bc9dceca17a5"
-        },
-        "ccdata/SCJ97EG.INI": {
-          "sha256": "e53f9bb41f2c0ce5636544b68f0e5aadfff84f76e31a7b3b96d601a237e584b7",
-          "source": "assets/objects/e53f9bb41f2c0ce5636544b68f0e5aadfff84f76e31a7b3b96d601a237e584b7"
-        },
-        "ccdata/SCJ98EG.INI": {
-          "sha256": "200674ee04c8a17f498c84e003d4d7b2879c6d3a23510bfc43298e85ff21285b",
-          "source": "assets/objects/200674ee04c8a17f498c84e003d4d7b2879c6d3a23510bfc43298e85ff21285b"
-        },
-        "ccdata/SCM01EA.INI": {
-          "sha256": "b5c1a559dd4cc66e34d09ec4b9340b7d2fd191a50e8915b4cc2f10cebc31bef1",
-          "source": "assets/objects/b5c1a559dd4cc66e34d09ec4b9340b7d2fd191a50e8915b4cc2f10cebc31bef1"
-        },
-        "ccdata/SCM02EA.INI": {
-          "sha256": "d9f2916f5f00ad048cf8c53853d3458d4b514f322aa7743ac5e84e6b6efc4081",
-          "source": "assets/objects/d9f2916f5f00ad048cf8c53853d3458d4b514f322aa7743ac5e84e6b6efc4081"
-        },
-        "ccdata/SCM03EA.INI": {
-          "sha256": "cfb1d5fc6ee8f579d9059cbf95f9a37b56492ec7a42b25b94e038c3ec1093192",
-          "source": "assets/objects/cfb1d5fc6ee8f579d9059cbf95f9a37b56492ec7a42b25b94e038c3ec1093192"
-        },
-        "ccdata/SCM04EA.INI": {
-          "sha256": "3b88b90b7155faabe057620256683c98a8df409c74a0d0e73c8e8973eec36a58",
-          "source": "assets/objects/3b88b90b7155faabe057620256683c98a8df409c74a0d0e73c8e8973eec36a58"
-        },
-        "ccdata/SCM05EA.INI": {
-          "sha256": "b621dcc05fb29ab43c0f0129ee3d02db0893266b814ae2342be8669109d60ba9",
-          "source": "assets/objects/b621dcc05fb29ab43c0f0129ee3d02db0893266b814ae2342be8669109d60ba9"
-        },
-        "ccdata/SCM06EA.INI": {
-          "sha256": "678a175b6b1c9dafb3890bbe2cc3aad5715554849b30f837e534caa3753ed4a9",
-          "source": "assets/objects/678a175b6b1c9dafb3890bbe2cc3aad5715554849b30f837e534caa3753ed4a9"
-        },
-        "ccdata/SCM07EA.INI": {
-          "sha256": "ff30afa3a13a8eb5411fa430b109e89c30cfbee8b63da00699060e713a8cebcd",
-          "source": "assets/objects/ff30afa3a13a8eb5411fa430b109e89c30cfbee8b63da00699060e713a8cebcd"
-        },
-        "ccdata/SCM08EA.INI": {
-          "sha256": "4f1f28eef8852a0bf5505b3435e19e0926abc5c59f54c6ca672c6f845f93dbd9",
-          "source": "assets/objects/4f1f28eef8852a0bf5505b3435e19e0926abc5c59f54c6ca672c6f845f93dbd9"
-        },
-        "ccdata/SCM09EA.INI": {
-          "sha256": "ab540b57cc1898abf2399ac13400ad83b314c5aa4293bc31990a46b47bd154ed",
-          "source": "assets/objects/ab540b57cc1898abf2399ac13400ad83b314c5aa4293bc31990a46b47bd154ed"
-        },
-        "ccdata/SCM10EA.INI": {
-          "sha256": "5353e4c33513895b72f632ff438167f4c50f583720a18db4004cc8f4fe87c613",
-          "source": "assets/objects/5353e4c33513895b72f632ff438167f4c50f583720a18db4004cc8f4fe87c613"
-        },
-        "ccdata/SCM50EA.INI": {
-          "sha256": "5555f5d59c9e7f14ff7fa5802861fce211e11ff7bed2c0cc72fc922a0bc1cf9d",
-          "source": "assets/objects/5555f5d59c9e7f14ff7fa5802861fce211e11ff7bed2c0cc72fc922a0bc1cf9d"
-        },
-        "ccdata/SCM51EA.INI": {
-          "sha256": "347dfe6961b9a7a681ed17849adb1eae2dd2a7ffe46bdc02e7a72c7445f6638c",
-          "source": "assets/objects/347dfe6961b9a7a681ed17849adb1eae2dd2a7ffe46bdc02e7a72c7445f6638c"
-        },
-        "ccdata/SCM52EA.INI": {
-          "sha256": "efd91104d3eb777ae43c20c15167db2f3a5ef88dc2ae2b77c1b6d3d33bdc499c",
-          "source": "assets/objects/efd91104d3eb777ae43c20c15167db2f3a5ef88dc2ae2b77c1b6d3d33bdc499c"
-        },
-        "ccdata/SCM60EA.INI": {
-          "sha256": "9f6ad42e4fe27e3f926860776edd543832ced22c6d33ff714f3481b379cd7060",
-          "source": "assets/objects/9f6ad42e4fe27e3f926860776edd543832ced22c6d33ff714f3481b379cd7060"
-        },
-        "ccdata/SCM61EA.INI": {
-          "sha256": "4bd2938a68545ebc3595c740572119224faa5c8c3cf1191716e8cb6afe53304e",
-          "source": "assets/objects/4bd2938a68545ebc3595c740572119224faa5c8c3cf1191716e8cb6afe53304e"
-        },
-        "ccdata/SCM62EA.INI": {
-          "sha256": "328f685897e8ce33c119a8f7806acafa1f50efdde4842499d68e3ec7587414a1",
-          "source": "assets/objects/328f685897e8ce33c119a8f7806acafa1f50efdde4842499d68e3ec7587414a1"
-        },
-        "ccdata/SCM70EA.INI": {
-          "sha256": "3d2e0f18b49a9d469a77ee5fc6b9cf201e21a1813bc3b668cb0e33c406f6cecf",
-          "source": "assets/objects/3d2e0f18b49a9d469a77ee5fc6b9cf201e21a1813bc3b668cb0e33c406f6cecf"
-        },
-        "ccdata/SCM71EA.INI": {
-          "sha256": "66ead1c1aa17510b9cea7d29a3a14cb3caa2c48115b0211669f205b1610357ae",
-          "source": "assets/objects/66ead1c1aa17510b9cea7d29a3a14cb3caa2c48115b0211669f205b1610357ae"
-        },
-        "ccdata/SCM72EA.INI": {
-          "sha256": "d8555926ea6564f6ab699c4c7dea85c476cdf01d0397dc8fc9c80246fedf1dd8",
-          "source": "assets/objects/d8555926ea6564f6ab699c4c7dea85c476cdf01d0397dc8fc9c80246fedf1dd8"
-        },
-        "ccdata/SCM73EA.INI": {
-          "sha256": "1c90f6b3f53d35ee32fa2175e20c0bfad51e225d85be08c1ad2f0c6bbbc5016a",
-          "source": "assets/objects/1c90f6b3f53d35ee32fa2175e20c0bfad51e225d85be08c1ad2f0c6bbbc5016a"
-        },
-        "ccdata/SCM74EA.INI": {
-          "sha256": "6a8046f07e1f2c2c7af67064b4d794e1f6c9fd28edf83e74103d02803fed9d2f",
-          "source": "assets/objects/6a8046f07e1f2c2c7af67064b4d794e1f6c9fd28edf83e74103d02803fed9d2f"
-        },
-        "ccdata/SCM75EA.INI": {
-          "sha256": "5be8cce32f49fb96f74f3fe56133fd1af6501f075af122efa84dfd25df8bab73",
-          "source": "assets/objects/5be8cce32f49fb96f74f3fe56133fd1af6501f075af122efa84dfd25df8bab73"
-        },
-        "ccdata/SCM77EA.INI": {
-          "sha256": "4cf9ce0d276d3725e0b8cc1ca15c12a63a51f93270af2b0aa631496b90592aec",
-          "source": "assets/objects/4cf9ce0d276d3725e0b8cc1ca15c12a63a51f93270af2b0aa631496b90592aec"
-        },
-        "ccdata/SCM90EA.INI": {
-          "sha256": "ff58beed8de3129b19e0e818b77de8e1c16e2bd224b4a1bb359fe2a7cf4e1883",
-          "source": "assets/objects/ff58beed8de3129b19e0e818b77de8e1c16e2bd224b4a1bb359fe2a7cf4e1883"
-        },
-        "ccdata/SCM96EA.INI": {
-          "sha256": "ae8cd985bdb1a7975b4b30618f183ede255c7725db54e62cb642bc9dceca17a5",
-          "source": "assets/objects/ae8cd985bdb1a7975b4b30618f183ede255c7725db54e62cb642bc9dceca17a5"
-        },
-        "ccdata/SCM97EA.INI": {
-          "sha256": "e53f9bb41f2c0ce5636544b68f0e5aadfff84f76e31a7b3b96d601a237e584b7",
-          "source": "assets/objects/e53f9bb41f2c0ce5636544b68f0e5aadfff84f76e31a7b3b96d601a237e584b7"
-        },
-        "ccdata/SCM98EA.INI": {
-          "sha256": "200674ee04c8a17f498c84e003d4d7b2879c6d3a23510bfc43298e85ff21285b",
-          "source": "assets/objects/200674ee04c8a17f498c84e003d4d7b2879c6d3a23510bfc43298e85ff21285b"
         },
         "ccdata/SCMCAEA.BIN": {
           "sha256": "0472092adac2638a05a6d6612913f0a69a498eea631a092a8679f8836e51fed9",
@@ -5801,14 +5838,9 @@
           "source": "assets/objects/af60e6d7f0098dbb71b219eeb8eeedb4f197467905259c2a7ec0153f22037bf3"
         },
         "ccmod.json": {
-          "sha256": "a3f5fbf003599cfc1831afcf50510d01942ff280dc294a22208e60d2c1e2a4e6",
-          "source": "assets/objects/a3f5fbf003599cfc1831afcf50510d01942ff280dc294a22208e60d2c1e2a4e6"
-        }
-      },
-      "workshop_id": "3825896336"
-    },
-    "CrystAlienConflictPlus": {
-      "files": {
+          "sha256": "6003f643a3cdc61e0259f4fce3e9d590f9b3f4fc4603ae5b7e7a7e9ecdd6ba7f",
+          "source": "assets/objects/6003f643a3cdc61e0259f4fce3e9d590f9b3f4fc4603ae5b7e7a7e9ecdd6ba7f"
+        },
         "Data/Art/Textures/sRGB/BuildIcon_TD_BAEVIL.tga": {
           "sha256": "55be11740899887f45696f5412ca270b1c100c9b566251c9e324544202e96056",
           "source": "assets/objects/55be11740899887f45696f5412ca270b1c100c9b566251c9e324544202e96056"
@@ -8438,8 +8470,8 @@
           "source": "assets/objects/6bdff17fb622edd51aaf36c368222de96686d691069950183aecd03d39cfebf8"
         },
         "Data/TiberianDawn.dll": {
-          "sha256": "95cb5f27e019f437e479a01f62f3704417deec57df2b8517768253c3b6a5cba5",
-          "source": "assets/objects/95cb5f27e019f437e479a01f62f3704417deec57df2b8517768253c3b6a5cba5"
+          "sha256": "0353f46b9f3591d4f246fd1a3107f7a3df2709d337c6205947cb54f6b09b3a78",
+          "source": "assets/objects/0353f46b9f3591d4f246fd1a3107f7a3df2709d337c6205947cb54f6b09b3a78"
         },
         "Data/XML/Audio/Audio_System_Constants.xml": {
           "sha256": "c112ea080050db37a05d57119d65a8d4f01eac076439832d2e1ec6dbd5eba847",
@@ -8487,7 +8519,7 @@
         },
         "LICENSE-EA-GPLv3.md": {
           "sha256": "ea983887086313047456607084c1323f92f6f809a53b939f659f5ce191b7d82f",
-          "source": "LICENSE-EA-GPLv3.md"
+          "source": "assets/objects/ea983887086313047456607084c1323f92f6f809a53b939f659f5ce191b7d82f"
         },
         "ModText.csv": {
           "sha256": "6bdff17fb622edd51aaf36c368222de96686d691069950183aecd03d39cfebf8",
@@ -8498,40 +8530,8 @@
           "source": "assets/objects/ff88316aa12c2dc8addd50c5e3142ea651b2365ea59f507b9b0e0651ecbec46e"
         },
         "Source/CrystAlienConflict-DLL-source.zip": {
-          "sha256": "5029d27896599da432352de5df27981d13191d0487c431f5b7942953c2498662",
+          "sha256": "035b8dc621f28af3d42fd22ca04dbb9c181b9a16043af8a9903e3280530c7d4f",
           "source": "@source-archive"
-        },
-        "ccdata/SCCAC.MIX": {
-          "sha256": "78dcd221b75d06212badf7405290309de571f18c47ad07322dbe47d1314a3b0f",
-          "source": "assets/objects/78dcd221b75d06212badf7405290309de571f18c47ad07322dbe47d1314a3b0f"
-        },
-        "ccdata/SCMCAEA.BIN": {
-          "sha256": "0472092adac2638a05a6d6612913f0a69a498eea631a092a8679f8836e51fed9",
-          "source": "assets/objects/0472092adac2638a05a6d6612913f0a69a498eea631a092a8679f8836e51fed9"
-        },
-        "ccdata/SCMCAEA.INI": {
-          "sha256": "4de8c61fa9d2f316a7c2836efede5333686ca23fd62fd8c5cbcc6abed78ab801",
-          "source": "assets/objects/4de8c61fa9d2f316a7c2836efede5333686ca23fd62fd8c5cbcc6abed78ab801"
-        },
-        "ccdata/SCMCAEA_RADAR_SMALL.TGA": {
-          "sha256": "c326d01f8997952b504868980ca77567db8f647dc88b1442167f5cb5b7027763",
-          "source": "assets/objects/c326d01f8997952b504868980ca77567db8f647dc88b1442167f5cb5b7027763"
-        },
-        "ccdata/SCMCBEA.BIN": {
-          "sha256": "c8e6902af4603a79195e38937ff3628846dc00f8e1a60202135aa9544d72aed8",
-          "source": "assets/objects/c8e6902af4603a79195e38937ff3628846dc00f8e1a60202135aa9544d72aed8"
-        },
-        "ccdata/SCMCBEA.INI": {
-          "sha256": "5bf1501dd33fd7f7037104d09e387fefc345162407e998b039bdcb52c5cb21ed",
-          "source": "assets/objects/5bf1501dd33fd7f7037104d09e387fefc345162407e998b039bdcb52c5cb21ed"
-        },
-        "ccdata/SCMCBEA_RADAR_SMALL.TGA": {
-          "sha256": "af60e6d7f0098dbb71b219eeb8eeedb4f197467905259c2a7ec0153f22037bf3",
-          "source": "assets/objects/af60e6d7f0098dbb71b219eeb8eeedb4f197467905259c2a7ec0153f22037bf3"
-        },
-        "ccmod.json": {
-          "sha256": "6003f643a3cdc61e0259f4fce3e9d590f9b3f4fc4603ae5b7e7a7e9ecdd6ba7f",
-          "source": "assets/objects/6003f643a3cdc61e0259f4fce3e9d590f9b3f4fc4603ae5b7e7a7e9ecdd6ba7f"
         }
       },
       "workshop_id": "3825897064"

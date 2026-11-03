@@ -1046,7 +1046,17 @@ void AircraftClass::AI(void)
 		**	It is on the ground because it is being loaded.  That is a reason to
 		**	stay there, not a reason to keep asking.
 		*/
-		bool loading = (Class != NULL && Class->IsTransporter && In_Radio_Contact());
+		bool loading = (Class != NULL && Class->IsTransporter && (In_Radio_Contact() || CAC_Has_Boarders(this)));
+
+		/*
+		**	A tether nobody holds the other end of.  The old boarding path left one
+		**	behind, and it blocks every boarder and the unload; nothing CrystAlien
+		**	carries is ever tethered now (CAC_Try_Embark).
+		*/
+		if (Class != NULL && Class->IsTransporter && IsTethered && !In_Radio_Contact() &&
+			 Mission != MISSION_UNLOAD && CAC_Is_Own_Carrier(this)) {
+			IsTethered = false;
+		}
 
 		/*
 		**	And fighting is not idling.
@@ -3713,6 +3723,11 @@ RadioMessageType AircraftClass::Receive_Message(RadioClass * from, RadioMessageT
 				return(RADIO_NEGATIVE);
 			}
 
+			/*	And never past capacity: the stock radio let only one in at a time. */
+			if (How_Many() >= Class->Max_Passengers()) {
+				return(RADIO_NEGATIVE);
+			}
+
 			if (How_Many() == Class->Max_Passengers()) {
 				Close_Door(5, 4);
 			}
@@ -3775,38 +3790,13 @@ RadioMessageType AircraftClass::Receive_Message(RadioClass * from, RadioMessageT
 				*/
 				bool cacload = (Class != NULL) && CAC_Is_CrystAlien_Type(Class->IniName);
 
+				/*
+				**	Nothing more than "is there room".  The tether and staging move that
+				**	were here cut the passenger's contact at its first step, left this
+				**	craft tethered to nobody, and blocked every boarder after the first;
+				**	the passenger now boards on arrival (CAC_Try_Embark).
+				*/
 				if (cacload) {
-					if (!IsTethered && !IsTakingOff && (Altitude == 0 || IsLanding)) {
-						Open_Door(5, 4);
-						param = (long)As_Target();
-
-						/*
-						**	Tethered to the passenger by name, and unselected by the
-						**	same test -- because this branch has no radio contact to
-						**	assume.
-						**
-						**	The stock branch below reaches its identical pair of lines
-						**	only after the RADIO_NEED_TO_MOVE handshake, which is what
-						**	establishes contact; the whole point of this one is that
-						**	CrystAlien has no handshake -- doEmbark runs the moment the
-						**	passenger stands on the tile, from any direction, with
-						**	nothing to fail.  Dropping the handshake dropped the thing
-						**	that made Contact_With_Whom answer.
-						**
-						**	Transmit_Message is null-safe and quietly returned
-						**	RADIO_STATIC, so the tether simply went nowhere; the
-						**	Unselect() that followed did not, and dereferenced NULL.
-						**	Crash, on a foot soldier walking into a Hyper Carrier:
-						**	Mission_Enter -> Transmit_Message -> here.
-						*/
-						Transmit_Message(RADIO_TETHER, from);
-						if (Transmit_Message(RADIO_MOVE_HERE, param, from) != RADIO_ROGER) {
-							Transmit_Message(RADIO_OVER_OUT, from);
-						} else {
-							TechnoClass *whom = Contact_With_Whom();
-							if (whom != NULL) whom->Unselect();
-						}
-					}
 					return(RADIO_ROGER);
 				}
 

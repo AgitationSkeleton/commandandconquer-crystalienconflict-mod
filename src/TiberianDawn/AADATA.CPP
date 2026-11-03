@@ -634,7 +634,10 @@ BuildingClass * AircraftTypeClass::Who_Can_Build_Me(bool , bool legal, HousesTyp
 			*/
 			(CAC_Has_Host(RTTI_AIRCRAFTTYPE, Type)
 				? CAC_Hosts_Unit(building->Class->Type, RTTI_AIRCRAFTTYPE, Type)
-				: building->Class->ToBuild == RTTI_AIRCRAFTTYPE)) {
+				: (building->Class->ToBuild == RTTI_AIRCRAFTTYPE &&
+				   /*	A stock type leaves by a stock factory: a GDI rifleman from a Barracks,
+				   **	not a Training Camp.  CrystAlien types are pinned to theirs above. */
+				   (CAC_Is_CrystAlien_Type(IniName) || !CAC_Is_CrystAlien_Type(building->Class->IniName))))) {
 
 			if (building->IsLeader) return(building);
 			anybuilding = building;

@@ -3868,7 +3868,7 @@ BuildingTypeClass const * const BuildingTypeClass::Pointers[STRUCT_COUNT] = {
 	&ClassHelipad,			//	STRUCT_HELIPAD
 	&ClassSAM,				//	STRUCT_SAM
 	&ClassAirStrip,		//	STRUCT_AIRSTRIP
-	&ClassAdvancedPower,			//	STRUCT_POWER
+	&ClassPower,			//	STRUCT_POWER
 	&ClassAdvancedPower,	//	STRUCT_POWER
 	&ClassHospital,			//	STRUCT_HOSPITAL
 	&ClassBarracks,			//	STRUCT_BARRACKS

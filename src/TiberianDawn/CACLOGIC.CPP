@@ -3703,6 +3703,50 @@ static bool CAC_Has_HQ(HouseClass const * house)
 		   CAC_Owns(house, CAC_CODE_BK) || CAC_Owns(house, CAC_CODE_BK | CAC_CODE_EVIL));
 }
 
+bool CAC_House_Has_HQ(HouseClass const * house)
+{
+	return(CAC_Has_HQ(house));
+}
+
+
+/*
+**	Which of a house's objects CrystAlien's own routines may command.
+**
+**	In the conversion, all of them.  In the supplemental a GDI or Nod house
+**	becomes a "CrystAlien house" at its first CrystAlien building, and these
+**	routines then sent its stock army to hunt, raided and patrolled with it, and
+**	cancelled its stock repairs -- overriding Tiberian Dawn's own attack and base
+**	logic wholesale.  There they keep to CrystAlien's units and buildings, and the
+**	stock ones are left to the stock AI.
+*/
+/*
+**	Whether CrystAlien's whole-house routines -- crates, the flag, its fighters'
+**	sorties -- run for this house.  In the conversion, for a CrystAlien house.  In
+**	the supplemental, for every skirmish computer: those routines are for the
+**	units on the field, and a GDI or Nod computer with no CrystAlien building yet
+**	still has crates to fetch and CrystAlien starting units to use.
+*/
+static bool CAC_AI_Runs_For(HouseClass const * house)
+{
+#ifdef CAC_SUPPLEMENTAL
+	return(house != NULL && house->Class != NULL && !house->IsHuman &&
+			 house->Class->House >= HOUSE_MULTI1);
+#else
+	return(CAC_Is_CrystAlien_House(house));
+#endif
+}
+
+
+static bool CAC_AI_Owns(TechnoClass const * object)
+{
+#ifdef CAC_SUPPLEMENTAL
+	return(object != NULL && object->Techno_Type_Class() != NULL &&
+			 CAC_Is_CrystAlien_Type(object->Techno_Type_Class()->IniName));
+#else
+	return(object != NULL);
+#endif
+}
+
 
 void CAC_AI_Aggression(HouseClass * house)
 {
@@ -3713,7 +3757,19 @@ void CAC_AI_Aggression(HouseClass * house)
 	**	Nothing left to defend.  Everything it has goes out, and keeps going out --
 	**	Do_All_To_Hunt is the engine's own, and is what it does at STATE_ENDGAME.
 	*/
-	if (!CAC_Has_HQ(house) && house->CurBuildings > 0) {
+	bool lastditch = (!CAC_Has_HQ(house) && house->CurBuildings > 0);
+#ifdef CAC_SUPPLEMENTAL
+	/*
+	**	Not while there is a stock base to fight from.  A GDI or Nod house that
+	**	lost its Eagle Command, or captured one CrystAlien building, still has
+	**	its own yard and factories, and this sent everything it owned -- the
+	**	harvesters and the MCV included -- on the suicide hunt every two seconds.
+	*/
+	if (house->ActiveBScan & (STRUCTF_CONST|STRUCTF_WEAP|STRUCTF_BARRACKS|STRUCTF_HAND|STRUCTF_AIRSTRIP|STRUCTF_HELIPAD)) {
+		lastditch = false;
+	}
+#endif
+	if (lastditch) {
 		/*
 		**	One static for all of them again -- seventh time for this.  Six houses lose
 		**	their headquarters at different moments and each takes the flag from the
@@ -3782,6 +3838,7 @@ void CAC_AI_Aggression(HouseClass * house)
 	for (i = 0; i < Units.Count(); i++) {
 		UnitClass * u = Units.Ptr(i);
 		if (u == NULL || !u->IsActive || u->IsInLimbo || u->House != house) continue;
+		if (!CAC_AI_Owns(u)) continue;
 		if (u->Strength == 0 || CAC_Is_Miner(*u) || u->Flagged != HOUSE_NONE) continue;
 		if (!u->Is_Weapon_Equipped()) continue;
 		if (Target_Legal(u->NavCom) || Target_Legal(u->TarCom)) continue;
@@ -3804,6 +3861,7 @@ void CAC_AI_Aggression(HouseClass * house)
 	for (i = 0; i < Aircraft.Count(); i++) {
 		AircraftClass * a = Aircraft.Ptr(i);
 		if (a == NULL || !a->IsActive || a->IsInLimbo || a->House != house) continue;
+		if (!CAC_AI_Owns(a)) continue;
 		if (a->Strength == 0 || a->Class == NULL) continue;
 		if (!a->Is_Weapon_Equipped()) continue;		/* the Dropship is CAC_AI_Airlift's */
 		if (CAC_Is_Boomerang(*a)) continue;			/* and a Fighter is CAC_AI_Sortie's */
@@ -3845,6 +3903,7 @@ void CAC_AI_Aggression(HouseClass * house)
 	for (i = 0; i < Infantry.Count(); i++) {
 		InfantryClass * man = Infantry.Ptr(i);
 		if (man == NULL || !man->IsActive || man->IsInLimbo || man->House != house) continue;
+		if (!CAC_AI_Owns(man)) continue;
 		if (man->Strength == 0 || !man->Is_Weapon_Equipped()) continue;
 		if (Target_Legal(man->NavCom) || Target_Legal(man->TarCom)) continue;
 		if (man->Mission != MISSION_GUARD &&
@@ -4129,7 +4188,7 @@ void CAC_AI_Flag(HouseClass * house)
 	if (house == NULL || house->IsHuman || !house->IsActive) return;
 	if (house->Class == NULL) return;
 	if (!Special.IsCaptureTheFlag || GameToPlay == GAME_NORMAL) return;
-	if (!CAC_Is_CrystAlien_House(house)) return;
+	if (!CAC_AI_Runs_For(house)) return;
 
 	if ((Frame % (TICKS_PER_SECOND / 2)) != 0) return;
 
@@ -4273,7 +4332,7 @@ void CAC_AI_Flag_Guard(HouseClass * house)
 	if (house == NULL || house->IsHuman || !house->IsActive) return;
 	if (house->Class == NULL) return;
 	if (!Special.IsCaptureTheFlag || GameToPlay == GAME_NORMAL) return;
-	if (!CAC_Is_CrystAlien_House(house)) return;
+	if (!CAC_AI_Runs_For(house)) return;
 
 	if ((Frame % (TICKS_PER_SECOND * 2)) != 0) return;
 
@@ -4426,6 +4485,7 @@ void CAC_AI_Repair(HouseClass * house)
 		BuildingClass * b = Buildings.Ptr(i);
 		if (b == NULL || !b->IsActive || b->IsInLimbo) continue;
 		if (b->House != house || b->Class == NULL) continue;
+		if (!CAC_AI_Owns(b)) continue;
 
 		bool hurt = (b->Strength < b->Class->MaxStrength);
 
@@ -4478,7 +4538,7 @@ void CAC_AI_Repair(HouseClass * house)
 void CAC_AI_Sortie(HouseClass * house)
 {
 	if (house == NULL || house->IsHuman) return;
-	if (!CAC_Is_CrystAlien_House(house)) return;
+	if (!CAC_AI_Runs_For(house)) return;
 
 	/*
 	**	Two seconds in every seventeen, which is UnitHAL's fifty frames in four
@@ -4835,6 +4895,7 @@ void CAC_AI_Patrol(HouseClass * house)
 	for (i = 0; i < Units.Count(); i++) {
 		UnitClass const * u = Units.Ptr(i);
 		if (u == NULL || !u->IsActive || u->IsInLimbo || u->House != house) continue;
+		if (!CAC_AI_Owns(u)) continue;
 		if (u->Strength == 0 || CAC_Is_Miner(*u) || u->Flagged != HOUSE_NONE ||
 			!u->Is_Weapon_Equipped()) continue;
 		armed++;
@@ -4842,6 +4903,7 @@ void CAC_AI_Patrol(HouseClass * house)
 	for (i = 0; i < Infantry.Count(); i++) {
 		InfantryClass const * man = Infantry.Ptr(i);
 		if (man == NULL || !man->IsActive || man->IsInLimbo || man->House != house) continue;
+		if (!CAC_AI_Owns(man)) continue;
 		if (man->Strength == 0 || !man->Is_Weapon_Equipped()) continue;
 
 		/*
@@ -4866,6 +4928,7 @@ void CAC_AI_Patrol(HouseClass * house)
 	for (i = 0; i < Units.Count() && sent < want; i++) {
 		UnitClass * u = Units.Ptr(i);
 		if (u == NULL || !u->IsActive || u->IsInLimbo || u->House != house) continue;
+		if (!CAC_AI_Owns(u)) continue;
 		if (u->Strength == 0 || CAC_Is_Miner(*u) || u->Flagged != HOUSE_NONE ||
 			!u->Is_Weapon_Equipped()) continue;
 		if (u->Class == NULL) continue;
@@ -4876,6 +4939,7 @@ void CAC_AI_Patrol(HouseClass * house)
 	for (i = 0; i < Infantry.Count() && sent < want; i++) {
 		InfantryClass * man = Infantry.Ptr(i);
 		if (man == NULL || !man->IsActive || man->IsInLimbo || man->House != house) continue;
+		if (!CAC_AI_Owns(man)) continue;
 		if (man->Strength == 0 || !man->Is_Weapon_Equipped()) continue;
 		if (man->Class == NULL || man->Class->IsCapture || CAC_Is_Decoy(man)) continue;
 
@@ -5200,6 +5264,7 @@ void CAC_AI_Raid(HouseClass * house)
 	for (int i = 0; i < Units.Count() && sent < want; i++) {
 		UnitClass * u = Units.Ptr(i);
 		if (u == NULL || !u->IsActive || u->IsInLimbo || u->House != house) continue;
+		if (!CAC_AI_Owns(u)) continue;
 		if (u->Strength == 0 || CAC_Is_Miner(*u) || u->Flagged != HOUSE_NONE ||
 			!u->Is_Weapon_Equipped()) continue;
 
@@ -5220,6 +5285,7 @@ void CAC_AI_Raid(HouseClass * house)
 	for (int i = 0; i < Aircraft.Count() && sent < want; i++) {
 		AircraftClass * a = Aircraft.Ptr(i);
 		if (a == NULL || !a->IsActive || a->IsInLimbo || a->House != house) continue;
+		if (!CAC_AI_Owns(a)) continue;
 		if (a->Strength == 0 || a->Class == NULL || !a->Is_Weapon_Equipped()) continue;
 		if (CAC_Is_Boomerang(*a)) continue;			/* tethered; CAC_AI_Sortie decides */
 		if (Target_Legal(a->TarCom)) continue;
@@ -5257,7 +5323,7 @@ void CAC_AI_Raid(HouseClass * house)
 void CAC_AI_Collect(HouseClass *house)
 {
 	if (house == NULL || house->IsHuman) return;
-	if (house->Class == NULL || !CAC_Is_CrystAlien_House(house)) return;
+	if (house->Class == NULL || !CAC_AI_Runs_For(house)) return;
 
 	/*
 	**	Once a second, staggered, and not once a frame.
@@ -5891,9 +5957,11 @@ void CAC_AI_Airlift(HouseClass *house)
 			*/
 			if (rank > 0 && !ride->Is_Something_Attached()) continue;
 
+			/*	The errand first, so the destination is taken as boarding (CAC_Try_Embark). */
 			man->Assign_Target(TARGET_NONE);
-			man->Assign_Destination(ride->As_Target());
 			man->Assign_Mission(MISSION_ENTER);
+			man->ArchiveTarget = ride->As_Target();
+			man->Assign_Destination(ride->As_Target());
 
 			CAC_Log("airlift", "%s: %s boarding %s (%d aboard of %d)",
 					house->Class->IniName, man->Class->IniName, ride->Class->IniName,
@@ -6447,7 +6515,8 @@ AircraftType CAC_AI_Aircraft(HouseClass const *house)
 	for (int i = 0; i < Buildings.Count(); i++) {
 		BuildingClass const *b = Buildings.Ptr(i);
 		if (b == NULL || !b->IsActive || b->IsInLimbo || b->House != house) continue;
-		if (b->Class != NULL && b->Class->ToBuild == RTTI_AIRCRAFTTYPE) pads++;
+		if (b->Class != NULL && b->Class->ToBuild == RTTI_AIRCRAFTTYPE &&
+			 CAC_Is_CrystAlien_Type(b->Class->IniName)) pads++;	/* its own pads; stock ones are the stock rule's */
 	}
 	if (pads == 0) return(AIRCRAFT_NONE);
 
@@ -6468,6 +6537,7 @@ AircraftType CAC_AI_Aircraft(HouseClass const *house)
 	for (int i = 0; i < Aircraft.Count(); i++) {
 		AircraftClass const *a = Aircraft.Ptr(i);
 		if (a == NULL || !a->IsActive || a->House != house) continue;
+		if (a->Class == NULL || !CAC_Is_CrystAlien_Type(a->Class->IniName)) continue;
 		owned++;
 		if (!a->IsInLimbo) flying++;
 	}
@@ -6481,22 +6551,16 @@ AircraftType CAC_AI_Aircraft(HouseClass const *house)
 	/*
 	**	The one there is least of, so a base ends up with a mix.
 	**
-	**	In the supplemental build that list is both rosters at once.  An Orca and
-	**	an Astro Fighter are the same job with different artwork, and a computer
-	**	that reaches for one of them first is a computer that never flies the
-	**	other; counting them together is what makes them interchangeable rather
-	**	than ranked.
+	**	CrystAlien's own aircraft only, in both builds.  The supplemental once put
+	**	both rosters in this list, which made it answer for stock helipads and
+	**	Chinooks too and kept AI_Aircraft's own one-per-pad rule from ever being
+	**	asked; now that rule picks the stock aircraft and this picks CrystAlien's.
 	*/
 	AircraftType best = AIRCRAFT_NONE;
 	int fewest = 0;
 	for (AircraftType index = AIRCRAFT_FIRST; index < AIRCRAFT_COUNT; index++) {
 		AircraftTypeClass const *type = &AircraftTypeClass::As_Reference(index);
-#ifndef CAC_SUPPLEMENTAL
-		/*
-		**	In the conversion there is nothing else in the air to consider.
-		*/
 		if (!CAC_Is_CrystAlien_Type(type->IniName)) continue;
-#endif
 		if (!house->Can_Build(type, house->ActLike)) continue;
 		if (CAC_At_Type_Cap(house, RTTI_AIRCRAFTTYPE, (int)index)) continue;
 
@@ -7536,13 +7600,28 @@ StructType CAC_AI_Extra(HouseClass const *house)
 	static int const _want[] = {
 		CAC_CODE_BA,		/* the headquarters, before any of it is reachable */
 		CAC_CODE_BB, CAC_CODE_BC, CAC_CODE_BD, CAC_CODE_BE,
-		CAC_CODE_BF, CAC_CODE_BG, CAC_CODE_BH
+		CAC_CODE_BF,
+#ifdef CAC_SUPPLEMENTAL
+		/*
+		**	The Ops Ship or the Hive.  The conversion reaches it through the
+		**	airstrip role; in the supplemental that role asks for the stock
+		**	Airstrip, so without this the Driller, Switch Fighter, Infiltrator,
+		**	Commander and Crystal Reaper never came.
+		*/
+		CAC_CODE_BK,
+#endif
+		CAC_CODE_BG, CAC_CODE_BH
 	};
 
 	for (int i = 0; i < (int)(sizeof(_want) / sizeof(_want[0])); i++) {
 		int slot = CAC_Slot_For(RTTI_BUILDINGTYPE, _want[i], evil);
 		if (slot < 0) continue;
 		if ((house->BScan & CAC_Scan_Bit((StructType)slot)) != 0) continue;
+#ifdef CAC_SUPPLEMENTAL
+		/*	A rung it cannot build yet is passed over, not waited on: the branch
+		**	stalled on one while the stock plan beside it went on regardless. */
+		if (!house->Can_Build(&BuildingTypeClass::As_Reference((StructType)slot), house->ActLike)) continue;
+#endif
 		return((StructType)slot);
 	}
 	return(STRUCT_NONE);
@@ -11641,7 +11720,10 @@ static void CAC_Log_Crates(void)
 		ObjectClass const *on = c.Cell_Occupier();
 		BuildingClass const *over = CAC_Building_Over(cell);
 
+		BuildingClass const *sits = c.Cell_Building();
+		TerrainClass const *tree = c.Cell_Terrain();
 		CAC_Log("crate", "%s at %d,%d: standing on it %s, drawn over by %s, "
+					  "inside %s, terrain %s, revealed %d, "
 					  "ground %d, smudge %d, owner %d",
 				  (c.Overlay == OVERLAY_STEEL_CRATE) ? "an Alien capsule" :
 				  (c.Overlay == OVERLAY_CAC_GIFT)    ? "a present" : "a crystal box",
@@ -11649,6 +11731,9 @@ static void CAC_Log_Crates(void)
 				  (on != NULL && on->Is_Techno()
 					  ? ((TechnoClass const *)on)->Techno_Type_Class()->IniName : "nothing"),
 				  (over != NULL && over->Class != NULL) ? over->Class->IniName : "nothing",
+				  (sits != NULL && sits->Class != NULL) ? sits->Class->IniName : "nothing",
+				  (tree != NULL) ? tree->Class_Of().IniName : "none",
+				  (int)c.IsMapped,
 				  (int)c.Land_Type(), (int)c.Smudge, (int)c.Owner);
 	}
 }
@@ -13044,6 +13129,117 @@ bool CAC_INI_Base_Has_Cell(char * buffer, CELL cell)
 		char * comma = strchr(value, ',');
 		if (comma == NULL) continue;
 		if (Coord_Cell((COORDINATE)atol(comma + 1)) == cell) return(true);
+	}
+	return(false);
+}
+
+
+/***********************************************************************************************
+ * CAC_May_Board -- May this passenger ride in that CrystAlien carrier?                        *
+ *                                                                                             *
+ *    CrystAlien's own riders are its `carriable` types (CAC_Is_Carriable).  Tiberian Dawn's   *
+ *    infantry ride too: the campaign's evacuations put Dr. Mobius and Delphi into the Recon   *
+ *    Dropship that stands in for the Chinook, and in the supplemental build a GDI squad may   *
+ *    take an Astro carrier.                                                                   *
+ *=============================================================================================*/
+bool CAC_May_Board(FootClass const * passenger, TechnoClass const * carrier)
+{
+	if (passenger == NULL || carrier == NULL || !CAC_Is_Own_Carrier(carrier)) return(false);
+	if ((ObjectClass const *)passenger == (ObjectClass const *)carrier) return(false);
+	TechnoTypeClass const * type = passenger->Techno_Type_Class();
+	if (type == NULL) return(false);
+	if (passenger->What_Am_I() == RTTI_INFANTRY && !CAC_Is_CrystAlien_Type(type->IniName)) return(true);
+	if (passenger->What_Am_I() != RTTI_INFANTRY) return(false);
+	return(CAC_Is_Carriable(passenger));
+}
+
+
+/***********************************************************************************************
+ * CAC_Try_Embark -- A passenger that has been told to board one of ours does so.              *
+ *                                                                                             *
+ *    CrystAlien boards by arrival, not by handshake.  The click gives every carriable unit in *
+ *    the selection `target = carrier`; each walks to the carrier's tile, and when it stands  *
+ *    there doEmbark checks the room and takes it aboard if the carrier is down --            *
+ *                                                                                             *
+ *        if (this.target.stats.carrier && this.target.team == this.parent.team &&            *
+ *            (!this.target.stats.flying || this.target.nav.landerPerc == 100))               *
+ *           this.parent.doEmbark(false);                                                      *
+ *                                                                                             *
+ *    -- and a passenger that finds it full drops the order.  No radio, no tether, no door.   *
+ *                                                                                             *
+ *    The port drove this through Tiberian Dawn's transport handshake, which talks to one     *
+ *    passenger at a time and tethers it before it moves.  The tether was cut at the first    *
+ *    cell the passenger walked through, which also ended its radio contact, so only a unit   *
+ *    already beside the carrier ever boarded; every other arrived with nobody listening and  *
+ *    stood on the carrier for good, and the carrier was left tethered to nothing, which      *
+ *    blocked every later boarder and the unload as well.  "May seat only one unit at a time, *
+ *    if at all."                                                                              *
+ *                                                                                             *
+ *    So a passenger holds its carrier in ArchiveTarget for the whole errand, and this is     *
+ *    asked from Mission_Enter and on every cell the passenger reaches.                       *
+ *                                                                                             *
+ * OUTPUT:  CAC_EMBARK_NOT_MINE -- not boarding one of ours; the stock code carries on.         *
+ *          CAC_EMBARK_GOING    -- on its way, or waiting under a carrier still in the air.    *
+ *          CAC_EMBARK_DONE     -- aboard, or the order dropped because the carrier is full.   *
+ *=============================================================================================*/
+int CAC_Try_Embark(FootClass * p)
+{
+	if (p == NULL || p->IsInLimbo || p->Mission != MISSION_ENTER) return(CAC_EMBARK_NOT_MINE);
+
+	TechnoClass * c = As_Techno(p->ArchiveTarget);
+	if (c == NULL || !CAC_Is_Own_Carrier(c)) c = As_Techno(p->NavCom);
+	if (c == NULL || !CAC_May_Board(p, c)) return(CAC_EMBARK_NOT_MINE);
+
+	p->ArchiveTarget = c->As_Target();
+
+	TechnoTypeClass const * ctype = c->Techno_Type_Class();
+	if (!c->IsActive || c->IsInLimbo || c->House != p->House || ctype == NULL ||
+		 c->How_Many() >= ctype->Max_Passengers()) {
+		p->ArchiveTarget = TARGET_NONE;
+		p->Assign_Destination(TARGET_NONE);
+		p->Enter_Idle_Mode();
+		return(CAC_EMBARK_DONE);
+	}
+
+	bool there = (Coord_Cell(p->Center_Coord()) == Coord_Cell(c->Center_Coord())) ||
+					 (::Distance(p->Center_Coord(), c->Center_Coord()) < 0x0180);
+	if (!there) {
+		if (p->NavCom != c->As_Target()) p->Assign_Destination(c->As_Target());
+		return(CAC_EMBARK_GOING);
+	}
+
+	/*	Arrived.  A carrier still in the air is waited under, as CrystAlien does. */
+	if (c->What_Am_I() == RTTI_AIRCRAFT && ((AircraftClass *)c)->Altitude != 0) {
+		return(CAC_EMBARK_GOING);
+	}
+
+	p->Transmit_Message(RADIO_OVER_OUT);
+	p->ArchiveTarget = TARGET_NONE;
+	p->Assign_Destination(TARGET_NONE);
+	p->Mark(MARK_UP);
+	p->Limbo();
+	c->Attach(p);
+	CAC_Log("board", "%s boards %s (%d of %d)", p->Techno_Type_Class()->IniName, ctype->IniName,
+			  c->How_Many(), ctype->Max_Passengers());
+	return(CAC_EMBARK_DONE);
+}
+
+
+/***********************************************************************************************
+ * CAC_Has_Boarders -- Is anyone still on the way to board this carrier?                       *
+ *                                                                                             *
+ *    The carrier stays down -- or comes down -- while it has passengers coming.  It asked    *
+ *    whether it was in radio contact, which only ever covered one of them.                    *
+ *=============================================================================================*/
+bool CAC_Has_Boarders(TechnoClass const * carrier)
+{
+	if (carrier == NULL || !CAC_Is_Own_Carrier(carrier)) return(false);
+	TARGET me = carrier->As_Target();
+	for (int i = 0; i < Infantry.Count(); i++) {
+		InfantryClass const * p = Infantry.Ptr(i);
+		if (p == NULL || !p->IsActive || p->IsInLimbo || p->House != carrier->House) continue;
+		if (p->Mission != MISSION_ENTER) continue;
+		if (p->ArchiveTarget == me || p->NavCom == me) return(true);
 	}
 	return(false);
 }

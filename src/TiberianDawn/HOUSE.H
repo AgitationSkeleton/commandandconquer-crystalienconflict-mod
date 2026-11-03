@@ -591,7 +591,12 @@ class HouseClass {
 		bool AI_Lower_Power(UrgencyType urgency) const;
 
 		bool Can_Make_Money(void) const {
+#ifdef CAC_SUPPLEMENTAL
+			/*	CrystAlien's carriers earn too, unloading at the headquarters. */
+			return(Available_Money() > 300 || (BScan & STRUCTF_REFINERY) || Miner_Count() > 0);
+#else
 			return(Available_Money() > 300 || (BScan & STRUCTF_REFINERY));
+#endif
 		};
 
 		int Expert_AI(void);

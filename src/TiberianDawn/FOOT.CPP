@@ -1761,6 +1761,13 @@ RadioMessageType FootClass::Receive_Message(RadioClass * from, RadioMessageType 
 int FootClass::Mission_Enter(void)
 {
 	/*
+	**	Boarding one of CrystAlien's carriers is the passenger's errand from start
+	**	to finish: walk there, and get in on arrival if there is room and the
+	**	carrier is down.  See CAC_Try_Embark.
+	*/
+	if (CAC_Try_Embark(this) != CAC_EMBARK_NOT_MINE) return(TICKS_PER_SECOND/4);
+
+	/*
 	**	Find out who to coordinate with. If in radio contact, then this the transporter is
 	**	defined. If not in radio contact, then try the archive target value to see if that
 	**	is suitable.

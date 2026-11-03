@@ -1850,7 +1850,10 @@ BuildingClass * UnitTypeClass::Who_Can_Build_Me(bool intheory, bool legal, House
 			*/
 			(CAC_Has_Host(RTTI_UNITTYPE, Type)
 				? CAC_Hosts_Unit(building->Class->Type, RTTI_UNITTYPE, Type)
-				: building->Class->ToBuild == RTTI_UNITTYPE) &&
+				: (building->Class->ToBuild == RTTI_UNITTYPE &&
+				   /*	A stock type leaves by a stock factory: a GDI rifleman from a Barracks,
+				   **	not a Training Camp.  CrystAlien types are pinned to theirs above. */
+				   (CAC_Is_CrystAlien_Type(IniName) || !CAC_Is_CrystAlien_Type(building->Class->IniName)))) &&
 				building->Mission != MISSION_DECONSTRUCTION &&
 				((1L << building->ActLike) & Ownable) &&
 				(!legal || building->House->Can_Build(Type, building->ActLike)) &&

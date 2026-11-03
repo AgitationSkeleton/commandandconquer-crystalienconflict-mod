@@ -927,6 +927,14 @@ void InfantryClass::Per_Cell_Process(bool center)
 	**	Infantry entering a transport vehicle will break radio contact
 	**	at attach itself to the transporter.
 	*/
+	/*
+	**	Or one of CrystAlien's carriers, which is boarded on arrival -- every cell
+	**	reached is a chance to have arrived.  See CAC_Try_Embark.
+	*/
+	if (center && Mission == MISSION_ENTER && CAC_Try_Embark(this) == CAC_EMBARK_DONE && IsInLimbo) {
+		return;
+	}
+
 	TechnoClass * techno = Contact_With_Whom();
 	if (center && Mission == MISSION_ENTER && techno && Coord_Cell(Coord) == Coord_Cell(techno->Coord) && techno == As_Techno(NavCom)) {
 		if (Transmit_Message(RADIO_IM_IN) == RADIO_ATTACH) {
@@ -1172,7 +1180,17 @@ void InfantryClass::Assign_Destination(TARGET target)
 		**	either try to establish contact if allowed, or just move close and
 		**	wait until radio contact can be established.
 		*/
-		if (!In_Radio_Contact()) {
+		TechnoClass * carrier = As_Techno(target);
+		if (carrier != NULL && CAC_May_Board(this, carrier)) {
+
+			/*
+			**	One of CrystAlien's carriers: no handshake, the passenger keeps the
+			**	carrier as its errand and boards on arrival (CAC_Try_Embark).  The
+			**	stock handshake below talks to one passenger at a time.
+			*/
+			ArchiveTarget = target;
+
+		} else if (!In_Radio_Contact()) {
 			TechnoClass * techno = As_Techno(target);
 
 			if (techno) {
@@ -1988,6 +2006,16 @@ MoveType InfantryClass::Can_Enter_Cell(CELL cell, FacingType ) const
 				**	is trying to capture.
 				*/
 				if (Mission == MISSION_ENTER && obj->As_Target() == NavCom && IsTethered) {
+					return(MOVE_OK);
+				}
+
+				/*
+				**	And onto one of CrystAlien's carriers it has been sent to board,
+				**	tether or no: UnitNav frees the carrier's tile for its boarders
+				**	(`this.target.freeBlock()`).
+				*/
+				if (Mission == MISSION_ENTER && obj->As_Target() == NavCom &&
+					 obj->Is_Techno() && CAC_May_Board(this, (TechnoClass const *)obj)) {
 					return(MOVE_OK);
 				}
 

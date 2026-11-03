@@ -1693,7 +1693,14 @@ void HouseClass::AI(void)
 						Class->IniName);
 		}
 		if (CAC_Is_Stock_Structure(STRUCT_TEMPLE) &&
+#ifdef CAC_SUPPLEMENTAL
+		    /*	The skirmish computer builds the Temple too; give it the strike, as
+		    **	the ion cannon above is given (IsHuman || not the campaign). */
+		    (GameToPlay == GAME_NORMAL || Rule.AllowSuperWeapons) && (ActiveBScan & STRUCTF_TEMPLE) && Has_Nuke_Device() &&
+		    (IsHuman || GameToPlay != GAME_NORMAL)) {
+#else
 		    (GameToPlay == GAME_NORMAL || Rule.AllowSuperWeapons) && (ActiveBScan & STRUCTF_TEMPLE) && Has_Nuke_Device() && IsHuman) {
+#endif
 			NukeStrike.Enable((GameToPlay == GAME_NORMAL), this == PlayerPtr);
 
 			/*
@@ -6770,6 +6777,15 @@ bool HouseClass::AI_Lower_Power(UrgencyType ) const
 {
 	//assert(Houses.ID(this) == ID);
 
+#ifdef CAC_SUPPLEMENTAL
+	/*
+	**	Never the last stock plant.  CrystAlien's plants count toward the surplus
+	**	that prompts this, and selling the one stock plant takes STRUCTF_POWER --
+	**	the stock tree's prerequisite -- with it.
+	*/
+	if (BQuantity[STRUCT_POWER] + BQuantity[STRUCT_ADVANCED_POWER] <= 1) return(false);
+#endif
+
 	BuildingClass * b = Find_Building(STRUCT_POWER);
 	if (b != NULL) {
 		b->Sell_Back(1);
@@ -7170,7 +7186,14 @@ int HouseClass::AI_Building(void)
 		StructType stype = STRUCT_NONE;
 		int money = Available_Money();
 		//int level = Control.TechLevel;
+#ifdef CAC_SUPPLEMENTAL
+		/*	Either economy is an income: a refinery's Harvesters, or the carriers
+		**	that unload at a CrystAlien headquarters. */
+		bool hasincome = (!IsTiberiumShort && Miner_Count() > 0 &&
+								(BQuantity[CAC_AI_Role(this, STRUCT_REFINERY)] > 0 || CAC_House_Has_HQ(this)));
+#else
 		bool hasincome = (BQuantity[CAC_AI_Role(this, STRUCT_REFINERY)] > 0 && !IsTiberiumShort && Miner_Count() > 0);
+#endif
 		BuildingTypeClass const * b = NULL;
 		HouseClass const * enemy = NULL;
 		if (Enemy != HOUSE_NONE) {
@@ -7203,6 +7226,34 @@ int HouseClass::AI_Building(void)
 		if (powerneed == URGENCY_NONE) {
 			powerneed = (BQuantity[CAC_AI_Role(this, STRUCT_REFINERY)] == 0) ? URGENCY_LOW : URGENCY_MEDIUM;
 		}
+#ifdef CAC_SUPPLEMENTAL
+		/*
+		**	Stock pacing for the stock plant, whatever CrystAlien's model says --
+		**	its "full" mapped to LOW, where Tiberian Dawn asks MEDIUM once a
+		**	refinery stands, and the base browned out.
+		*/
+		{
+			UrgencyType stock = (BQuantity[CAC_AI_Role(this, STRUCT_REFINERY)] == 0) ? URGENCY_LOW : URGENCY_MEDIUM;
+			if (Power <= Drain + Rule.PowerSurplus && powerneed < stock) powerneed = stock;
+		}
+
+		/*
+		**	A stock power plant is a prerequisite, not only supply.  The refinery,
+		**	the Barracks and the Hand of Nod all need STRUCTF_POWER, and a CrystAlien
+		**	plant does not set it -- so a computer that opened with its Eagle Command
+		**	and then CrystAlien's plant had power to spare, never wanted a stock one,
+		**	and never reached the stock tree at all.  First, and at HIGH.
+		*/
+		if ((BScan & (STRUCTF_POWER|STRUCTF_ADVANCED_POWER)) == 0) {
+			BuildingTypeClass const * plant = &BuildingTypeClass::As_Reference(CAC_AI_Role(this, STRUCT_POWER));
+			if (Can_Build(plant, ActLike) && (plant->Cost_Of() <= money || hasincome)) {
+				choiceptr = BuildChoice.Alloc();
+				if (choiceptr != NULL) {
+					*choiceptr = BuildChoiceClass(URGENCY_HIGH, plant->Type);
+				}
+			}
+		}
+#endif
 
 		b = &BuildingTypeClass::As_Reference(CAC_AI_Role(this, STRUCT_ADVANCED_POWER));
 		if (Can_Build(b, ActLike) && wantpower && (b->Cost_Of() < money || hasincome)) {
@@ -7677,7 +7728,14 @@ int HouseClass::AI_Building(void)
 					**	not at all -- and the whole point of it is the roster hanging off
 					**	it, which the computer is otherwise never in a position to field.
 					*/
+#ifdef CAC_SUPPLEMENTAL
+					/*	Behind the stock core until there is a refinery: the stock
+					**	plan's plant, refinery, barracks and factory go up first, and
+					**	then the two trees take turns. */
+					*choiceptr = BuildChoiceClass(BQuantity[CAC_AI_Role(this, STRUCT_REFINERY)] == 0 ? URGENCY_LOW : URGENCY_MEDIUM, b->Type);
+#else
 					*choiceptr = BuildChoiceClass(URGENCY_MEDIUM, b->Type);
+#endif
 					}
 				}
 			}
@@ -7869,7 +7927,44 @@ int HouseClass::AI_Unit(void)
 	**	side runs: `max` on the Miner, which is four.  Counting headquarters
 	**	instead left the computer mining with a single Miner all game.
 	*/
+#ifdef CAC_SUPPLEMENTAL
+	/*
+	**	Two economies side by side, and each wants its own carriers.
+	**
+	**	The supplemental computer counted stock refineries alone, then bought the
+	**	CrystAlien Miner for them -- which unloads at the headquarters, not at a
+	**	refinery.  A house with an Eagle Command or a Mothership and no refinery
+	**	wanted nothing at all, and was "blindly spending on CrystAlien buildings
+	**	but no miners".  So: a Harvester for each stock refinery, as Tiberian Dawn
+	**	keeps them, and CrystAlien's own carriers up to their `max` once the house
+	**	holds the headquarters they come from.
+	*/
+	if (IQ >= Rule.IQHarvester && !IsTiberiumShort && !IsHuman) {
+		unsigned miners = 0;			/*	CrystAlien's own carriers */
+		for (UnitType u = UNIT_FIRST; u < UNIT_COUNT; u++) {
+			if (CAC_Is_Miner(RTTI_UNITTYPE, (int)u)) miners += UQuantity[u];
+		}
+		unsigned harvesters = Miner_Count() - miners;
+		if ((unsigned)BQuantity[STRUCT_REFINERY] > harvesters && (ActiveBScan & STRUCTF_WEAP) &&
+			 Can_Build(&UnitTypeClass::As_Reference(UNIT_HARVESTER), ActLike)) {
+			BuildUnit = UNIT_HARVESTER;
+			return(TICKS_PER_SECOND);
+		}
+		UnitType miner = Miner_Type();
+		if (CAC_Is_Miner(RTTI_UNITTYPE, (int)miner)) {
+			int cap = CAC_Type_Cap(RTTI_UNITTYPE, (int)miner);
+			unsigned cacwant = (cap > 0) ? (unsigned)cap : 2;
+			if (miners < cacwant &&
+				 CAC_Build_Level(&UnitTypeClass::As_Reference(miner)) <= (unsigned)BuildLevel) {
+				BuildUnit = miner;
+				return(TICKS_PER_SECOND);
+			}
+		}
+	}
+	unsigned want = 0;
+#else
 	unsigned want = (unsigned)BQuantity[CAC_AI_Role(this, STRUCT_REFINERY)];
+#endif
 	{
 		UnitType miner = Miner_Type();
 		if (CAC_Is_Miner(RTTI_UNITTYPE, (int)miner)) {
@@ -7986,7 +8081,14 @@ int HouseClass::AI_Unit(void)
 		UnitType index;
 		for (index = UNIT_FIRST; index < UNIT_COUNT; index++) {
 			UnitTypeClass const * utype = &UnitTypeClass::As_Reference(index);
+#ifdef CAC_SUPPLEMENTAL
+			/*	Neither economy's carrier is a combat pick: the stock Harvester and
+			**	CrystAlien's Miner are each bought by the branch above. */
+			if (Can_Build(utype, ActLike) && utype->Type != UNIT_HARVESTER &&
+				 !CAC_Is_Miner(RTTI_UNITTYPE, (int)utype->Type)) {
+#else
 			if (Can_Build(utype, ActLike) && utype->Type != Miner_Type()) {
+#endif
 				//if (utype->PrimaryWeapon != NULL) {
 				if (utype->Primary != WEAPON_NONE) {
 					counter[index] = 20;
@@ -8444,6 +8546,7 @@ int HouseClass::AI_Aircraft(void)
 		**	owns none of the three, so the routine fell through every time and no
 		**	computer player ever put anything in the air.  See CAC_AI_Aircraft.
 		*/
+#ifndef CAC_SUPPLEMENTAL
 		{
 			AircraftType pick = CAC_AI_Aircraft(this);
 			if (pick != AIRCRAFT_NONE) {
@@ -8451,6 +8554,7 @@ int HouseClass::AI_Aircraft(void)
 				return(TICKS_PER_SECOND);
 			}
 		}
+#endif
 
 		if (Can_Build(&AircraftTypeClass::As_Reference(AIRCRAFT_HELICOPTER), ActLike) &&
 				 //AircraftTypeClass::As_Reference(AIRCRAFT_MIG).Level <= (unsigned)Control.TechLevel &&
@@ -8499,6 +8603,22 @@ int HouseClass::AI_Aircraft(void)
 				 BQuantity[STRUCT_AIRSTRIP] > AQuantity[AIRCRAFT_MIG] + AQuantity[AIRCRAFT_YAK]) {
 			BuildAircraft = AIRCRAFT_YAK;
 			return(TICKS_PER_SECOND);
+		}
+#endif
+
+#ifdef CAC_SUPPLEMENTAL
+		/*
+		**	Both air forces: Tiberian Dawn's own one-per-pad rule above for the
+		**	stock aircraft, and CrystAlien's pick here for its own.  First, this
+		**	returned before the stock rule was ever asked, and counted stock
+		**	helipads and Chinooks in its sums.
+		*/
+		{
+			AircraftType pick = CAC_AI_Aircraft(this);
+			if (pick != AIRCRAFT_NONE) {
+				BuildAircraft = pick;
+				return(TICKS_PER_SECOND);
+			}
 		}
 #endif
 	}

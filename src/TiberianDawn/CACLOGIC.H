@@ -402,6 +402,11 @@ void CAC_Roll_Call(void);
 void CAC_Watch_Factories(void);
 bool CAC_Is_Carriable(ObjectClass const * obj);
 bool CAC_Is_Own_Carrier(TechnoClass const *object);
+bool CAC_May_Board(FootClass const * passenger, TechnoClass const * carrier);
+enum { CAC_EMBARK_NOT_MINE, CAC_EMBARK_GOING, CAC_EMBARK_DONE };
+int CAC_Try_Embark(FootClass * passenger);
+bool CAC_Has_Boarders(TechnoClass const * carrier);
+bool CAC_House_Has_HQ(HouseClass const * house);
 bool CAC_Fires_Both(TechnoClass const *object);
 ObjectClass * CAC_Group_Capturer(DynamicVectorClass<ObjectClass *> &objects,
                                  ObjectClass * subject);

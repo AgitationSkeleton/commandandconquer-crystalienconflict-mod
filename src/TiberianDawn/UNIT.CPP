@@ -680,6 +680,10 @@ RadioMessageType UnitClass::Receive_Message(RadioClass * from, RadioMessageType 
 		**	entered the transport.
 		*/
 		case RADIO_IM_IN:
+			/*	Never past capacity: the stock radio let only one in at a time. */
+			if (How_Many() >= Class->Max_Passengers()) {
+				return(RADIO_NEGATIVE);
+			}
 			if (How_Many() == Class->Max_Passengers()) {
 				APC_Close_Door();
 			}
@@ -690,6 +694,15 @@ RadioMessageType UnitClass::Receive_Message(RadioClass * from, RadioMessageType 
 		**	to the impatient unit.
 		*/
 		case RADIO_DOCKING:
+
+			/*
+			**	One of CrystAlien's carriers answers only "is there room"; its boarders
+			**	get in on arrival (CAC_Try_Embark).  The handshake below, and the
+			**	tether that used to follow, admitted one passenger at a time.
+			*/
+			if (CAC_Is_Own_Carrier(this)) {
+				return((How_Many() < Class->Max_Passengers()) ? RADIO_ROGER : RADIO_NEGATIVE);
+			}
 
 			/*
 			**	Check for the case of a docking message arriving from a unit that does not
